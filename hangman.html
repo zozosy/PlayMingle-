@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hangman</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hangman.css">
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
     </header>
 
     <main>
-      <section id=" side_bar">
+      <section id="side_bar">
           <h3>Recommended</h3>
          <ul>
             <li>Friends</li>
@@ -55,14 +56,27 @@
       </section>
 
       <section id="Main_page">
-            <h2>New Released</h2>
-            <article class="Thumbnails">
-                <img src="" alt="image not dispalyed">
-                <h3>Hangman</h3> 
-                <p>Guess the hidden word before you runs out of your moves in this word-guessing game.</p>
+            <section id="root">
+                <div class="hangstand">
+                    <div class="class-1"></div>
+                    <div class="class-2"></div>
+                    <div class="class-3"></div>
+                    <div class="class-4"></div>
+                    <div class="class-5"></div>
+                    <div class="class-6"></div>
+                    <div class="class-7"></div>
+                    <div class="class-8"></div>
+                    <div class="class-9"></div>
+                    <div class="class-10"></div>
+                  </div>
+                  <div style="margin-right: 25px">
+                    <div class="blanks_parent"></div>
+                    <div class="buttons-parent"></div>
+                  </div>
+            </section>
     </section>
 
-
+    <section class="obective"><p>how to play</p></section>
     </main>
 
 
@@ -82,7 +96,7 @@
         </ul>
      </section>
     </footer>
-     
 
+    <script src="hangman.js"></script>
 </body>
 </html>
