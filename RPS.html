@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayMingle</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="RPS.css">
     
 </head>
 <body>
@@ -16,11 +17,7 @@
             <h1 class="neon-text">Play Mingle</h1>
             <ul>
                 <a class="neon-text" href="playmingle.html">Home</a>
-<<<<<<< HEAD
-                <a class="neon-text" href="TicTacToe.html">Games</a>
-=======
-                <a class="neon-text" href="RPS.html">Games</a>
->>>>>>> 567413527b1ae24dbb2d09337a0251cdf7732a17
+                <a class="neon-text" href="hangman.html">Games</a>
                 <select id="games-dropdown">
                     <option value="tic-tac-toe">Tic Tac Toe</option>
                     <option value="hangman">Hangman</option>
@@ -50,8 +47,8 @@
             <li>Upcoming</li>
          </ul>
          <h3>Browse by Genre</h3>
-        <ul>
-            <li>Arcade</li>
+         <ul>
+             <li>Arcade</li>
             <li>Logical</li>
             <li>Casual</li>
             <li>Indie</li>
@@ -59,30 +56,19 @@
         </ul>  
       </section>
 
-      <section id="Main_page">
-            <h2>New Released</h2>
-            <article class="Thumbnails">
-             <img src="" alt="image not dispalyed">
-             <h3>Tic-Tac-Toe</h3> 
-             <p>Strategically place Xs and Os to outwit your opponent in this classic game of wits and strategy.</p>
+        <section class="wrapper">
+            <article class="buttons">
+              <button class="rpsButton" value="Rock">✊</button>
+              <button class="rpsButton" value="Paper">🤚</button>
+              <button class="rpsButton" value="Scissors">✌️</button>
             </article>
-            <article class="Thumbnails">
-                <img src="" alt="image not dispalyed">
-                <h3>Hangman</h3> 
-                <p>Guess the hidden word before you runs out of your moves in this word-guessing game.</p>
-         </article>
-         <article class="Thumbnails">
-            <img src="" alt="image not dispalyed">
-            <h3>Rock Paper Scissor</h3> 
-            <p>Quickly decide your move and challenge your opponent in the ultimate hand-based showdown.</p>
-     </article>
-        <article class="Thumbnails">
-            <img src="" alt="image not dispalyed">
-            <h3>Number Guesser</h3> 
-            <p>Test your number intuition by guessing the correct number within a specified range.</p>
-        </article>
-
-    </section>
+            <article class="resultContainer">
+              <div id="player-score"></div>
+              <div id="hands"></div>
+              <div id="result"></div>
+              <button id='endGameButton'>🔴</button>
+            </article>
+        </section>
     </main>
 
 
@@ -103,6 +89,6 @@
      </section>
     </footer>
      
-
+    <script src="RPS.js"></script>
 </body>
 </html>
