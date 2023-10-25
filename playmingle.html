@@ -17,15 +17,12 @@
             <h1 class="neon-text">Play Mingle</h1>
             <ul>
                 <a class="neon-text" href="playmingle.html">Home</a>
-
-                <a class="neon-text" href="hangman.html">Games</a>
-
-                
-
+                <a class="neon-text" href="tic-tac-toe.html">Games</a>
                 <select id="games-dropdown">
-                    <option value="tic-tac-toe">Tic Tac Toe</option>
+                    <option value="game">Games</option>
+                    <option value="tic-tac-toe">TicTacToe</option>
                     <option value="hangman">Hangman</option>
-                    <option value="rock-paper-scissors">Rock Paper Scissors</option>
+                    <option value="RPS">Rock Paper Scissor</option>
                     <option value="number-guesser">Number Guesser</option>
                     <option value="number-guesser">Blacjack</option>
                 </select>
@@ -103,8 +100,16 @@
         </ul>
      </section>
     </footer>
-     
 
+    <script>
+        var select = document.getElementById("games-dropdown");
+        select.addEventListener("change", function() {
+            var selectedOption = select.options[select.selectedIndex].value;
+            if (selectedOption) {
+                window.location.href = selectedOption + ".html";
+            }
+        });
+    </script>
 </body>
 </html>
 
