@@ -1,0 +1,88 @@
+/* Apply styles to the main section */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+
+/* Style the side_bar section */
+
+#side_bar {
+    flex: 1;
+    background: linear-gradient(to bottom, #ff3366, #ffcc00);
+    color: #fdefb5;
+}
+
+
+/* Style the template section */
+
+#template {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style the top, game, and bottom sections inside the template section */
+
+#top {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* Center the text horizontally */
+    margin: 10px 0;
+}
+
+#game {
+    text-align: center;
+    /* Center the content horizontally */
+    margin: 10px 0;
+}
+
+#bottom {
+    text-align: center;
+    /* Center the content horizontally */
+    margin: 10px 0;
+}
+
+
+/* Style the top, game, and bottom sections inside the template section */
+
+#top,
+#game,
+#bottom {
+    margin: 10px;
+}
+
+
+/* Style the button, h2, and p elements inside the top section */
+
+#top button {
+    text-align: left;
+    margin: 0px 50px 0px 50px;
+}
+
+#top h2 {
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+}
+
+#top p {
+    text-align: right;
+    margin: 7px 50px 0px 50px;
+}
+
+
+/* Style the objective section */
+
+#obective {
+    flex: 1;
+    /* Takes up 1/5 of the available space */
+    background: linear-gradient(to bottom, #000000, #ff0040);
+    color: #ffffff;
+}
