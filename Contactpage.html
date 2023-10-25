@@ -15,11 +15,12 @@
             <h1 class="neon-text">Play Mingle</h1>
             <ul>
                 <a class="neon-text" href="playmingle.html">Home</a>
-                <a class="neon-text" href="hangman.html">Games</a>
+                <a class="neon-text" href="tic-tac-toe.html">Games</a>
                 <select id="games-dropdown">
-                    <option value="tic-tac-toe">TicTac Toe</option>
+                    <option value="game">Games</option>
+                    <option value="tic-tac-toe">TicTacToe</option>
                     <option value="hangman">Hangman</option>
-                    <option value="rock-paper-scissors">Rock Paper Scissors</option>
+                    <option value="RPS">Rock Paper Scissor</option>
                     <option value="number-guesser">Number Guesser</option>
                     <option value="number-guesser">Blacjack</option>
                 </select>
@@ -61,9 +62,9 @@
           <p>We're here to help! If you have any questions, feedback, or just want to say hello, feel free to reach out. Your input is important to us, and we're excited to hear from you.</p>
            <p> We'll get back to you as soon as possible. Thank you for being a part of the Play Mingle community!</p>
          <ul>
-             <img src="" alt="img nt displayed">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjZpI4NAzXo4KNyOer9M_uZIZJKF-2Z_yXQ&usqp=CAU" height="30" width="30" alt="img nt displayed">
              <strong>+1 2345678901</strong><br><br>
-             <img src="" alt="img nt displayed">
+             <img src="https://www.logo.wine/a/logo/Gmail/Gmail-Logo.wine.svg" height="30" width="30" alt="img nt displayed">
              <strong>team2@gmail.com</strong><br>
          </ul>
     </section>
@@ -95,7 +96,7 @@
 
     <footer>
      <section>
-        <img src="" alt="img nt displayed">
+        <img src="./images/logo_components.png" >
         <p> &copy; 2023 Play Mingle</p> 
         <p>Created by Team 2 for Coding in Color </p>
         </p>
@@ -109,7 +110,7 @@
         </ul>
      </section>
     </footer>
-     
+    <script> var select = document.getElementById("games-dropdown"); select.addEventListener("change", function() { var selectedOption = select.options[select.selectedIndex].value; if (selectedOption) { window.location.href = selectedOption + ".html"; } }); </script>
 
 </body>
 </html>
