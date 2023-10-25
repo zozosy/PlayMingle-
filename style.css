@@ -84,14 +84,14 @@ main {
     
 }
 #side_bar {
-<<<<<<< HEAD
+
 
     background: linear-gradient(to bottom, #fc0000, #f90404);
     color: #ffcc00;
-=======
+
     background: linear-gradient(to bottom, #fc0000, #000000);
     color: #fffbec;
->>>>>>> 624584529d0ca51ccaec067558222653353b159c
+
     padding: 50px;
     border-radius: 10px;
     text-align: left;
@@ -211,13 +211,13 @@ form button:hover {
 
 footer {
     background: linear-gradient(to bottom, #333, #ff0000);
-<<<<<<< HEAD
+
     color: #ffffff;
     padding: 4px 100px 3px;
-=======
+
     color: #f2ff00;
     padding: 6px 10px;
->>>>>>> 624584529d0ca51ccaec067558222653353b159c
+
     text-align: left;
     font-size:x-small;
    
