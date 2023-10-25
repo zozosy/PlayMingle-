@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayMingle</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="RPS.css">
     
 </head>
 <body>
@@ -48,8 +48,8 @@
             <li>Upcoming</li>
          </ul>
          <h3>Browse by Genre</h3>
-        <ul>
-            <li>Arcade</li>
+         <ul>
+             <li>Arcade</li>
             <li>Logical</li>
             <li>Casual</li>
             <li>Indie</li>
@@ -57,30 +57,19 @@
         </ul>  
       </section>
 
-      <section id="Main_page">
-            <h2>New Released</h2>
-            <article class="Thumbnails">
-             <img src="./images/tictactoe.jpeg" alt="image not dispalyed">
-             <h3>Tic-Tac-Toe</h3> 
-             <p>Strategically place Xs and Os to outwit your opponent in this classic game of wits and strategy.</p>
+        <section class="wrapper">
+            <article class="buttons">
+              <button class="rpsButton" value="Rock">✊</button>
+              <button class="rpsButton" value="Paper">🤚</button>
+              <button class="rpsButton" value="Scissors">✌️</button>
             </article>
-            <article class="Thumbnails">
-                <img src="./images/hangman.jpeg" alt="image not dispalyed">
-                <h3>Hangman</h3> 
-                <p>Guess the hidden word before you runs out of your moves in this word-guessing game.</p>
-         </article>
-         <article class="Thumbnails">
-            <img src="./images/RPS.jpeg" alt="image not dispalyed">
-            <h3>Rock Paper Scissor</h3> 
-            <p>Quickly decide your move and challenge your opponent in the ultimate hand-based showdown.</p>
-     </article>
-        <article class="Thumbnails">
-            <img src="./images/NumberGuesser.jpg" alt="image not dispalyed">
-            <h3>Number Guesser</h3> 
-            <p>Test your number intuition by guessing the correct number within a specified range.</p>
-        </article>
-
-    </section>
+            <article class="resultContainer">
+              <div id="player-score"></div>
+              <div id="hands"></div>
+              <div id="result"></div>
+              <button id='endGameButton'>🔴</button>
+            </article>
+        </section>
     </main>
 
 
@@ -100,16 +89,7 @@
         </ul>
      </section>
     </footer>
-
-    <script>
-        var select = document.getElementById("games-dropdown");
-        select.addEventListener("change", function() {
-            var selectedOption = select.options[select.selectedIndex].value;
-            if (selectedOption) {
-                window.location.href = selectedOption + ".html";
-            }
-        });
-    </script>
+     
+    <script src="RPS.js"></script>
 </body>
 </html>
-
