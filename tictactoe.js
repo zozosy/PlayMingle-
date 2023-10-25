@@ -67,3 +67,11 @@ document.getElementById("reset").addEventListener('click', () => {
     document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px";
 });
+
+var select = document.getElementById("games-dropdown");
+select.addEventListener("change", function() {
+    var selectedOption = select.options[select.selectedIndex].value;
+    if (selectedOption) {
+        window.location.href = selectedOption + ".html";
+    }
+});

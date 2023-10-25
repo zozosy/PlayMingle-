@@ -4,6 +4,14 @@ function getComputerChoice() {
     return computerChoice
 }
 
+var select = document.getElementById("games-dropdown");
+select.addEventListener("change", function() {
+    var selectedOption = select.options[select.selectedIndex].value;
+    if (selectedOption) {
+        window.location.href = selectedOption + ".html";
+    }
+});
+
 // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
 // human wins - getResult('Rock', 'Scissors') 👉 1
 // human loses - getResult('Scissors', 'Rock') 👉 -1
