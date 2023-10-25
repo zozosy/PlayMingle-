@@ -4,9 +4,9 @@ body {
     background-color: #111;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-}
-
-.neon-text {
+    
+  }
+ .neon-text {
     text-align: right;
     color: rgb(221, 255, 0);
     text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
@@ -41,9 +41,11 @@ img {
     border: 2px solid #d0ff00;
     box-shadow: 3px 3px 12px rgb(255, 255, 0);
     padding: 6px;
-}
-
-header h1 {
+  }
+  
+    
+  
+  header h1 {
     font-size: 50px;
     margin: 0;
     text-transform: uppercase;
