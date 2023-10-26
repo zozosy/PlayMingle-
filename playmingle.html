@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +10,22 @@
 </head>
 <body>
     <header>
-     <section class="logo">
-          <img src= "./images/logo_components.png" height=" 150" width= "150" alt="unable to load" />
-         <h1 class="neon-text">Play Mingle</h1>
-     </section>
+        <section class="logo">
+            <img src= "./images/logo_components.png" height=" 150" width= "150" alt="unable to load" />
+       </section>
         <nav>
+            <h1 class="neon-text">Play Mingle</h1>
             <ul>
                 <a class="neon-text" href="playmingle.html">Home</a>
-                <a class="neon-text" href="hangman.html">Games
-                    <select id="games-dropdown">
-                    <option value="tic-tac-toe">Tic Tac Toe</option>
+                <a class="neon-text" href="tic-tac-toe.html">Games</a>
+                <select id="games-dropdown">
+                    <option value="game">Games</option>
+                    <option value="tic-tac-toe">TicTacToe</option>
                     <option value="hangman">Hangman</option>
-                    <option value="rock-paper-scissors">Rock Paper Scissors</option>
+                    <option value="RPS">Rock Paper Scissor</option>
                     <option value="number-guesser">Number Guesser</option>
                     <option value="number-guesser">Blacjack</option>
-                  </select></a>
+                </select>
                 <a class="neon-text" href="Contactpage.html">Contact</a>
                 <a class="neon-text" href>Login</a>
                 <a class="neon-text" href>Leaderboard</a>
@@ -46,8 +48,8 @@
             <li>Upcoming</li>
          </ul>
          <h3>Browse by Genre</h3>
-         <ul>
-             <li>Arcade</li>
+        <ul>
+            <li>Arcade</li>
             <li>Logical</li>
             <li>Casual</li>
             <li>Indie</li>
@@ -58,22 +60,46 @@
       <section id="Main_page">
             <h2>New Released</h2>
             <article class="Thumbnails">
-             <img src="" alt="image not dispalyed">
+
+                <a href="TicTacToe.html">
+                    <img src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU" height="300" width="300">
+                  </a>  
+
+             <!-- <img src="./images/tictactoe.jpeg" alt="image not dispalyed"> -->
+
              <h3>Tic-Tac-Toe</h3> 
              <p>Strategically place Xs and Os to outwit your opponent in this classic game of wits and strategy.</p>
             </article>
             <article class="Thumbnails">
-                <img src="" alt="image not dispalyed">
+
+                <a href="hangman.html">
+                    <img src="https://camo.githubusercontent.com/b06f7228a60a65cdf010c6301c97d2bba910790e56f8834c0cdb54d9c9610d1f/687474703a2f2f6563782e696d616765732d616d617a6f6e2e636f6d2f696d616765732f492f3831787432253242504430494c2e706e67" height="300" width="300">
+                  </a>
+
+                <!-- <img src="./images/hangman.jpeg" alt="image not dispalyed"> -->
+
                 <h3>Hangman</h3> 
                 <p>Guess the hidden word before you runs out of your moves in this word-guessing game.</p>
          </article>
          <article class="Thumbnails">
-            <img src="" alt="image not dispalyed">
+
+            <a href="RPS.html">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*hPhzeFD3htF7ly1AMmAVbw.png"height="300" width="300" >
+              </a>
+
+            <!-- <img src="./images/RPS.jpeg" alt="image not dispalyed"> -->
+
             <h3>Rock Paper Scissor</h3> 
             <p>Quickly decide your move and challenge your opponent in the ultimate hand-based showdown.</p>
      </article>
         <article class="Thumbnails">
-            <img src="" alt="image not dispalyed">
+
+            <a href="NumberGuesser.html">
+                <img src="https://content.instructables.com/FGE/F6F0/K1NVATVK/FGEF6F0K1NVATVK.jpg?auto=webp" height="300" width="300">
+              </a>
+
+            <!-- <img src="./images/NumberGuesser.jpg" alt="image not dispalyed"> -->
+
             <h3>Number Guesser</h3> 
             <p>Test your number intuition by guessing the correct number within a specified range.</p>
         </article>
@@ -85,8 +111,8 @@
     <footer>
         
      <section>
-        <img src="" alt="img nt displayed">
-        <p> &copy; 2023 Play Mingle</p> <br><br>
+        <img src="./images/logo_components.png">
+        <p> &copy; 2023 Play Mingle</p> 
         <p>Created by Team 2 for Coding in Color </p>
         </p>
         <p>Play Mingle : Where Fun Meets Community
@@ -100,7 +126,16 @@
 
      </section>
     </footer>
-     
 
+    <script>
+        var select = document.getElementById("games-dropdown");
+        select.addEventListener("change", function() {
+            var selectedOption = select.options[select.selectedIndex].value;
+            if (selectedOption) {
+                window.location.href = selectedOption + ".html";
+            }
+        });
+    </script>
 </body>
 </html>
+
