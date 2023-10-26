@@ -14,7 +14,7 @@
 }
 
 .hangstand {
-    width: 40vw;
+    width: 38vw;
     position: relative;
 }
 
@@ -32,7 +32,7 @@ button {
 
 .buttons-parent {
     width: 50%;
-    padding-right: 6%;
+    padding-right: 3%;
     display: grid;
     height: 40vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -60,11 +60,11 @@ span {
     height: fit-content;
     width: fit-content;
     margin: 10px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     border-bottom: 2px solid white;
     height: 40px;
-    width: 40px;
+    width: 25px;
 }
 
 .blanks_parent {
@@ -89,7 +89,7 @@ span {
 .class-1 {
     height: 5px;
     width: 60%;
-    left: 20px;
+    left: 0px;
     background: white;
     position: absolute;
     bottom: 23%;
@@ -108,7 +108,7 @@ span {
 .class-3 {
     height: 5px;
     width: 40%;
-    left: 20px;
+    left: 0px;
     background: white;
     position: absolute;
     top: 5%;
@@ -129,8 +129,8 @@ span {
     width: 80px;
     position: absolute;
     background-color: white;
-    left: 160px;
-    top: 150px;
+    left: 140px;
+    top: 135px;
     border-radius: 50%;
 }
 
@@ -140,7 +140,7 @@ span {
     top: 40vh;
     background: white;
     position: absolute;
-    right: 240px;
+    right: 245px;
     transform: rotate(90deg);
 }
 
@@ -150,7 +150,7 @@ span {
     top: 35vh;
     background: white;
     position: absolute;
-    right: 340px;
+    right: 350px;
     transform: rotate(20deg);
 }
 
@@ -160,27 +160,27 @@ span {
     top: 35vh;
     background: white;
     position: absolute;
-    right: 240px;
+    right: 250px;
     transform: rotate(-20deg);
 }
 
 .class-9 {
     height: 7px;
     width: 15vh;
-    top: 60vh;
+    top: 58vh;
     background: white;
     position: absolute;
-    right: 240px;
+    right: 250px;
     transform: rotate(-150deg);
 }
 
 .class-10 {
     height: 7px;
     width: 15vh;
-    top: 60vh;
+    top: 58vh;
     background: white;
     position: absolute;
-    right: 340px;
+    right: 350px;
     transform: rotate(150deg);
 }
 
