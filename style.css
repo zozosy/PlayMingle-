@@ -83,6 +83,7 @@ main {
 }
 
 #side_bar {
+    flex: 1;
     background: rgba(235, 0, 0, 0.8);
     color: #FFF;
     padding: 10px;
@@ -103,6 +104,22 @@ main {
 
 #side_bar li {
     margin: 15px;
+}
+
+#Main_page {
+    flex: 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    margin-left: 100px;
+}
+
+.Thumbnails {
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #Contact-page {
