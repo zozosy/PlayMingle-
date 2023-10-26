@@ -252,6 +252,11 @@ function giveMeButtonsOnScreen() {
         const btn = document.createElement("button");
         btn.textContent = el;
         rootEl.appendChild(btn);
+        // Adjust the font size and width of the buttons
+        btn.style.fontSize = "1rem";
+        btn.style.width = "40px"; // Adjust the width as needed
+        btn.style.height = "40px"; // Adjust the height as needed
+        btn.style.margin = "5px"; // Adjust the margin as needed
     });
 }
 
@@ -268,6 +273,9 @@ function chooseRandomAnimalName() {
         para.textContent = letter;
         alpha.appendChild(para);
         blankParentEl.appendChild(alpha);
+        // Adjust the font size and margin of the hyphen elements
+        alpha.style.fontSize = "20px"; // Adjust the font size as needed
+        alpha.style.margin = "5px"; // Adjust the margin as needed
     }
 }
 
@@ -316,7 +324,7 @@ const buttonParentClickFunction = function(e) {
     }
 
     if (checkStatusGlobal == randomAnimalName.length) {
-        alert("You won the Game bro");
+        alert("You won the Game");
         location.reload();
     }
 };
