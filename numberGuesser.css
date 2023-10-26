@@ -10,10 +10,11 @@ main {
 
 /* Style the side_bar section */
 
-#side_bar {
+#NGside_bar {
     flex: 1;
-    background: linear-gradient(to bottom, #ff3366, #ffcc00);
-    color: #fdefb5;
+    background: linear-gradient(to bottom, #ff0000, #000000);
+    color: #ffffff;
+    padding-left: 10px;
 }
 
 
@@ -83,6 +84,7 @@ main {
 #objective {
     flex: 1;
     /* Takes up 1/5 of the available space */
-    background: linear-gradient(to bottom, #000000, #ff0040);
+    background: linear-gradient(to bottom, #000000, #ff0000);
     color: #ffffff;
+    padding: 10px;
 }
