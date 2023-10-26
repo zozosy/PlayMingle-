@@ -9,12 +9,12 @@
 
 #root {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
 }
 
 .hangstand {
-    width: 38vw;
+    width: 40vw;
     position: relative;
 }
 
@@ -68,10 +68,10 @@ span {
 }
 
 .blanks_parent {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 100px ;
 }
 
 .greenBtn,
@@ -184,12 +184,12 @@ span {
     transform: rotate(150deg);
 }
 
-.display-none {
+ .display-none {
     display: none;
-}
+} 
 
 main {
-    padding: 10px;
+    padding: 3px;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
     display: grid;
@@ -197,17 +197,16 @@ main {
 }
 
 #side_bar {
-    background: rgba(235, 0, 0, 0.8);
+    background: rgba(188, 0, 0, 0.8);
     color: #FFF;
-    padding: 10px;
+    padding: 10px  10px  0px;
+    border-radius: 3px;
 }
 
 #side_bar h3 {
     color: #e1ff00;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-family: monospace;
-    color: rgb(221, 255, 0);
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
 }
 
 #side_bar ul {
@@ -220,14 +219,28 @@ main {
 }
 
 #Main_page {
-    padding: 20px;
+    padding: 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    
 }
 
 #objective {
-    background: linear-gradient(to bottom, #000000, #ff0040);
+    font-size:small;
+    background: linear-gradient(to bottom, #ff0000, #2a0808);
     color: #ffffff;
-    padding: 10px;
+    padding: 4px;
+    border-radius: 15px;
+    font-family: monospace;
+}
+
+#objective h3{
+    font-family:serif;
+    color: #e1ff00;
+    margin-bottom: 5px;
+    font-family: monospace;
+    
+    
 }
