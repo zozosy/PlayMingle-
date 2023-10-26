@@ -39,8 +39,12 @@ button {
 }
 
 button:hover {
-    background-color: #fae28a;
     cursor: pointer;
+    background: linear-gradient(to bottom, #f2a922, #ff0000b1);
+    text-shadow: 0 0 10px #ff0000;
+    color: #ffea00;
+    text-shadow: 0 0 10px #ff0000;
+    transition: color 0.3s;
 }
 
 body {
@@ -183,3 +187,49 @@ span {
 .display-none {
     display: none;
 }
+
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+}
+
+#side_bar {
+    float: left;
+    width: 15%;
+    background: rgba(235, 0, 0, 0.8);
+    color: #FFF;
+    padding: 20px 20px 0px;
+}
+
+
+#side_bar h3 {
+    color: #e1ff00;
+    margin-bottom: 24px;
+    font-family: monospace;
+    color: rgb(221, 255, 0);
+    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
+} 
+
+
+#side_bar ul {
+    list-style:circle;
+    font-family:monospace;
+
+}
+
+#side_bar li {
+    margin: 15px;
+}
+
+#objective {
+    flex: 1;
+    /* Takes up 1/5 of the available space */
+    background: linear-gradient(to bottom, #000000, #ff0040);
+    color: #ffffff;
+    float: left;
+}
+
+
+
+
