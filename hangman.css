@@ -34,7 +34,7 @@ button {
     width: 50%;
     padding-right: 6%;
     display: grid;
-    height: 60vh;
+    height: 40vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -87,100 +87,100 @@ span {
 }
 
 .class-1 {
-    height: 10px;
-    width: 80%;
+    height: 5px;
+    width: 60%;
     left: 20px;
     background: white;
     position: absolute;
-    bottom: 8%;
+    bottom: 23%;
 }
 
 .class-2 {
-    height: 10px;
-    width: 90vh;
-    top: 46vh;
+    height: 7px;
+    width: 70vh;
+    top: 40vh;
     background: white;
     position: absolute;
-    right: 197px;
+    right: 300px;
     transform: rotate(90deg);
 }
 
 .class-3 {
-    height: 10px;
-    width: 50%;
+    height: 5px;
+    width: 40%;
     left: 20px;
     background: white;
     position: absolute;
-    top: 1.7%;
+    top: 5%;
 }
 
 .class-4 {
-    height: 5px;
+    height: 3px;
     width: 15vh;
-    top: 9.8vh;
+    top: 12vh;
     background: white;
     position: absolute;
-    right: 198px;
+    right: 300px;
     transform: rotate(90deg);
 }
 
 .class-5 {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     position: absolute;
     background-color: white;
-    left: 212px;
-    top: 114px;
+    left: 160px;
+    top: 150px;
     border-radius: 50%;
 }
 
 .class-6 {
     height: 10px;
-    width: 28vh;
-    top: 46vh;
+    width: 30vh;
+    top: 40vh;
     background: white;
     position: absolute;
-    right: 160px;
+    right: 240px;
     transform: rotate(90deg);
 }
 
 .class-7 {
-    height: 10px;
-    width: 20vh;
-    top: 46vh;
+    height: 7px;
+    width: 15vh;
+    top: 35vh;
     background: white;
     position: absolute;
-    right: 245px;
+    right: 340px;
     transform: rotate(20deg);
 }
 
 .class-8 {
-    height: 10px;
-    width: 20vh;
-    top: 46vh;
+    height: 7px;
+    width: 15vh;
+    top: 35vh;
     background: white;
     position: absolute;
-    right: 125px;
+    right: 240px;
     transform: rotate(-20deg);
 }
 
 .class-9 {
-    height: 10px;
-    width: 20vh;
-    top: 64vh;
+    height: 7px;
+    width: 15vh;
+    top: 60vh;
     background: white;
     position: absolute;
-    right: 131px;
+    right: 240px;
     transform: rotate(-150deg);
 }
 
 .class-10 {
-    height: 10px;
-    width: 20vh;
-    top: 64vh;
+    height: 7px;
+    width: 15vh;
+    top: 60vh;
     background: white;
     position: absolute;
-    right: 236px;
+    right: 340px;
     transform: rotate(150deg);
 }
 
@@ -202,20 +202,17 @@ main {
     padding: 20px 20px 0px;
 }
 
-
 #side_bar h3 {
     color: #e1ff00;
     margin-bottom: 24px;
     font-family: monospace;
     color: rgb(221, 255, 0);
     text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
-} 
-
+}
 
 #side_bar ul {
-    list-style:circle;
-    font-family:monospace;
-
+    list-style: circle;
+    font-family: monospace;
 }
 
 #side_bar li {
@@ -223,13 +220,7 @@ main {
 }
 
 #objective {
-    flex: 1;
-    /* Takes up 1/5 of the available space */
     background: linear-gradient(to bottom, #000000, #ff0040);
     color: #ffffff;
     float: left;
 }
-
-
-
-

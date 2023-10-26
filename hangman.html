@@ -1,133 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hangman</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hangman.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hangman.css" />
+  </head>
+  <body>
     <header>
-        <section class="logo">
-            <img src= "./images/logo_components.png" height=" 150" width= "150" alt="unable to load" />
-       </section>
-        <nav>
-            <h1 class="neon-text">Play Mingle</h1>
-            <ul>
-                <a class="neon-text" href="playmingle.html">Home</a>
-                <a class="neon-text" href="tic-tac-toe.html">Games</a>
-                <select id="games-dropdown">
-                    <option value="game">Games</option>
-                    <option value="tic-tac-toe">TicTacToe</option>
-                    <option value="hangman">Hangman</option>
-                    <option value="RPS">Rock Paper Scissor</option>
-                    <option value="number-guesser">Number Guesser</option>
-                    <option value="number-guesser">Blacjack</option>
-                </select>
-                <a class="neon-text" href="Contactpage.html">Contact</a>
-                <a class="neon-text" href>Login</a>
-                <a class="neon-text" href>Leaderboard</a>
-            </ul>
-        </nav>
+      <section class="logo">
+        <img
+          src="./images/logo_components.png"
+          height=" 150"
+          width="150"
+          alt="unable to load"
+        />
+      </section>
+      <nav>
+        <h1 class="neon-text">Play Mingle</h1>
+        <ul>
+          <a class="neon-text" href="playmingle.html">Home</a>
+          <a class="neon-text" href="tic-tac-toe.html">Games</a>
+          <select id="games-dropdown">
+            <option value="game">Games</option>
+            <option value="tic-tac-toe">TicTacToe</option>
+            <option value="hangman">Hangman</option>
+            <option value="RPS">Rock Paper Scissor</option>
+            <option value="number-guesser">Number Guesser</option>
+            <option value="number-guesser">Blacjack</option>
+          </select>
+          <a class="neon-text" href="Contactpage.html">Contact</a>
+          <a class="neon-text" href>Login</a>
+          <a class="neon-text" href>Leaderboard</a>
+        </ul>
+      </nav>
     </header>
-         
+
     <main>
       <section id="side_bar">
-          <h3>Recommended</h3>
-         <ul>
-            <li>Friends</li>
-            <li>Tags</li>
-         </ul>
-          <h3>Browse Categories</h3>
-         <ul>
-            <li>New Released</li>
-            <li>Top Seller</li>
-            <li>Special</li>
-            <li>Upcoming</li>
-         </ul>
-         <h3>Browse by Genre</h3>
-         <ul>
-             <li>Arcade</li>
-            <li>Logical</li>
-            <li>Casual</li>
-            <li>Indie</li>
-            <li>Early Release</li>
-        </ul>  
+        <h3>Recommended</h3>
+        <ul>
+          <li>Friends</li>
+          <li>Tags</li>
+        </ul>
+        <h3>Browse Categories</h3>
+        <ul>
+          <li>New Released</li>
+          <li>Top Seller</li>
+          <li>Special</li>
+          <li>Upcoming</li>
+        </ul>
+        <h3>Browse by Genre</h3>
+        <ul>
+          <li>Arcade</li>
+          <li>Logical</li>
+          <li>Casual</li>
+          <li>Indie</li>
+          <li>Early Release</li>
+        </ul>
       </section>
 
       <section id="Main_page">
-            <section id="root">
-                <div class="hangstand">
-                    <div class="class-1"></div>
-                    <div class="class-2"></div>
-                    <div class="class-3"></div>
-                    <div class="class-4"></div>
-                    <div class="class-5"></div>
-                    <div class="class-6"></div>
-                    <div class="class-7"></div>
-                    <div class="class-8"></div>
-                    <div class="class-9"></div>
-                    <div class="class-10"></div>
-                  </div>
-                  <div style="margin-right: 25px">
-                    <div class="blanks_parent"></div>
-                    <div class="buttons-parent"></div>
-                  </div>
-            </section>
-    </section>
-    <section class="objective"><p>how to play</p></section>
+        <section id="root">
+          <div class="hangstand">
+            <div class="class-1"></div>
+            <div class="class-2"></div>
+            <div class="class-3"></div>
+            <div class="class-4"></div>
+            <div class="class-5"></div>
+            <div class="class-6"></div>
+            <div class="class-7"></div>
+            <div class="class-8"></div>
+            <div class="class-9"></div>
+            <div class="class-10"></div>
+          </div>
+          <div style="margin-right: 25px">
+            <div class="blanks_parent"></div>
+            <div class="buttons-parent"></div>
+          </div>
+        </section>
+      </section>
 
-    <section id="objective">
-        <h3>Objective</h3>
-        <p>
-          Hangman is a word-guessing game that is typically played with two or more players. 
-        </p>
+      <section id="objective">
         <h3>How to play</h3>
         <ul>
-          
           <li>
             One player thinks of a word and draws blank spaces for each letter.
           </li>
+          <li>Other players guess one letter at a time.</li>
           <li>
-            Other players guess one letter at a time.
-          </li>  
-          <li>
-            If a guessed letter is in the word, it's filled in; if not, a part of the hangman is drawn
+            If a guessed letter is in the word, it's filled in; if not, a part
+            of the hangman is drawn
           </li>
-          <li>The game continues until the word is guessed or the hangman is completed.</li>
-
-        </ul>
-        <h3>About</h3>
-        <ul>
-         <P>Hangman is a fun and challenging word game that can be played with friends to test vocabulary and word-guessing skills. The game's difficulty can be adjusted by varying the length and complexity of the secret word or the number of allowed incorrect guesses.</P>
+          <li>
+            The game continues until the word is guessed or the hangman is
+            completed.
+          </li>
         </ul>
       </section>
     </main>
 
-
     <footer>
       <section class="bigfoot">
-        <div><img src="./images/logo_components.png"></div>
-        
-       <article id="copy">
+        <div><img src="./images/logo_components.png" /></div>
 
-       <p> &copy; 2023 Play Mingle</p> 
-       <p>Created by Team 2 for Coding in Color </p></article>
-       
-       <article id= "play" > 
-       <p>Play Mingle : Where Fun Meets Community</p>
-       <p>Welcome to Play Mingle, your gateway to a world of engaging web games and social interaction.</article>
+        <article id="copy">
+          <p>&copy; 2023 Play Mingle</p>
+          <p>Created by Team 2 for Coding in Color</p>
+        </article>
 
-       <article id="points"> <ul>
-           <li>Privacy Policy</li>
-           <li>Terms of Service</li>
-       </ul></article>
-      
-       
-    </section>
+        <article id="play">
+          <p>Play Mingle : Where Fun Meets Community</p>
+          <p>
+            Welcome to Play Mingle, your gateway to a world of engaging web
+            games and social interaction.
+          </p>
+        </article>
+
+        <article id="points">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </article>
+      </section>
     </footer>
 
     <script src="hangman.js"></script>
-</body>
+  </body>
 </html>
