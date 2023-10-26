@@ -9,12 +9,12 @@
 
 #root {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
 }
 
 .hangstand {
-    width: 40vw;
+    width: 30vw;
     position: relative;
 }
 
@@ -59,7 +59,7 @@ span {
     color: white;
     height: fit-content;
     width: fit-content;
-    margin: 10px;
+    margin: 18px;
     font-size: 30px;
     text-align: center;
     border-bottom: 2px solid white;
@@ -71,7 +71,7 @@ span {
     height: 20vh;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 90px ;
 }
 
 .greenBtn,
@@ -184,11 +184,11 @@ span {
     transform: rotate(150deg);
 }
 
-.display-none {
+ .display-none {
     display: none;
-}
+} 
 
-main {
+/* main {
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
@@ -220,16 +220,64 @@ main {
 
 #side_bar li {
     margin: 15px;
-}
+} */
 
 #objective {
     flex: 1;
-    /* Takes up 1/5 of the available space */
+   
     background: linear-gradient(to bottom, #000000, #ff0040);
     color: #ffffff;
     float: left;
+} 
+
+
+
+
+
+
+#side_bar {
+    width: 20%;
+    padding: 0 20px;
+    background-color: #333;
+}
+
+#side_bar h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#side_bar ul {
+    list-style: none;
+}
+
+#side_bar li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#Main_page {
+    width: 75%;
+    background-color: #222;
+    padding: 20px;
 }
 
 
 
+#objective {
+    width: 20%;
+    background-color: #333;
+    padding: 20px;
+}
+
+#objective h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#objective p {
+    font-size: 16px;
+    margin: 10px 0;
+}
 
