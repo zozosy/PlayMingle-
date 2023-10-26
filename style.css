@@ -207,25 +207,78 @@ form button:hover {
 }
 
 
+
 footer {
+
     background: linear-gradient(to bottom, #333, #ff0000);
-
-    color: #ffffff;
-    padding: 4px 100px 3px;
-
-    color: #ffffff;
     padding: 6px 10px;
 
-    text-align: left;
-    font-size:x-small;
    
 }
 
-footer img {
-    width: 45px;
-    height: 45px;
+
+
+.bigfoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
+#copy {
+    
+    flex: 1;
+    color: #ccc;
+    text-align: left;
+    font-size:small;
+    padding: 10px 10px 15px;
+    
+}
+
+#copy p{
+    padding: 1px;
+
+}
+
+
+
+#play{
+  
+    flex:3;
+    color: #ccc;
+    text-align: left;
+    padding: 5px;
+    float: center;
+    
+}
+
+#points {
+    flex:1;
+    color: #ccc;
+    text-align: left;
+    padding: 10px 100px 15px;
+    
+}
+
+#points li {
+    margin:11%;
+}
+
+footer img {
+   
+    width: 50px;
+    height: 50px;
+    font-size: x-small;
+    float: left;
+    width:auto;
+    border: #2a0808;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #b90a0a, #000000);
+    border-radius: 800px;
+    border: 2px solid #d0ff00;
+    box-shadow: 3px 3px 12px rgb(255, 255, 0);
+    padding: 8px;
+} 
 
 
 
