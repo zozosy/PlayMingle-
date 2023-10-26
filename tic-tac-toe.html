@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TicTacToe</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tictactoe.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tictactoe.css" />
+  </head>
+  <body>
     <header>
-        <section class="logo">
-            <img src= "./images/logo_components.png" height=" 150" width= "150" alt="unable to load" />
-       </section>
-        <nav>
-            <h1 class="neon-text">Play Mingle</h1>
-            <ul>
-                <a class="neon-text" href="playmingle.html">Home</a>
-                <a class="neon-text" href="tic-tac-toe.html">Games</a>
-                <select id="games-dropdown">
-                    <option value="game">Games</option>
-                    <option value="tic-tac-toe">TicTacToe</option>
-                    <option value="hangman">Hangman</option>
-                    <option value="RPS">Rock Paper Scissor</option>
-                    <option value="number-guesser">Number Guesser</option>
-                    <option value="number-guesser">Blacjack</option>
-                </select>
-                <a class="neon-text" href="Contactpage.html">Contact</a>
-                <a class="neon-text" href>Login</a>
-                <a class="neon-text" href>Leaderboard</a>
-            </ul>
-        </nav>
+      <section class="logo">
+        <img
+          src="./images/logo_components.png"
+          height=" 150"
+          width="150"
+          alt="unable to load"
+        />
+      </section>
+      <nav>
+        <h1 class="neon-text">Play Mingle</h1>
+        <ul>
+          <a class="neon-text" href="playmingle.html">Home</a>
+          <a class="neon-text" href="tic-tac-toe.html">Games</a>
+          <select id="games-dropdown">
+            <option value="game">Games</option>
+            <option value="tic-tac-toe">TicTacToe</option>
+            <option value="hangman">Hangman</option>
+            <option value="RPS">Rock Paper Scissor</option>
+            <option value="number-guesser">Number Guesser</option>
+            <option value="number-guesser">Blacjack</option>
+          </select>
+          <a class="neon-text" href="Contactpage.html">Contact</a>
+          <a class="neon-text" href>Login</a>
+          <a class="neon-text" href>Leaderboard</a>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id=" side_bar">
-            <h3>Recommended</h3>
-            <ul>
-                <li>Friends</li>
-                <li>Tags</li>
-            </ul>
-            <h3>Browse Categories</h3>
-            <ul>
-                <li>New Released</li>
-                <li>Top Seller</li>
-                <li>Special</li>
-                <li>Upcoming</li>
-            </ul>
-            <h3>Browse by Genre</h3>
-            <ul>
-                <li>Arcade</li>
-                <li>Logical</li>
-                <li>Casual</li>
-                <li>Indie</li>
-                <li>Early Release</li>
-            </ul>  
-        </section>
+      <section id="side_bar">
+        <h3>Recommended</h3>
+        <ul>
+          <li>Friends</li>
+          <li>Tags</li>
+        </ul>
+        <h3>Browse Categories</h3>
+        <ul>
+          <li>New Released</li>
+          <li>Top Seller</li>
+          <li>Special</li>
+          <li>Upcoming</li>
+        </ul>
+        <h3>Browse by Genre</h3>
+        <ul>
+          <li>Arcade</li>
+          <li>Logical</li>
+          <li>Casual</li>
+          <li>Indie</li>
+          <li>Early Release</li>
+        </ul>
+      </section>
 
-        <section class="tttgrid">
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-            <div class="box"><span class="boxtext"></span></div>
-        </section>
+      <section class="tttgrid">
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+      </section>
 
-        <section class="gameInfo">
-            <h2>Tic Tac Toe</h2>
-            <article>
-                <span class="info">X's Turn</span>
-                <button id="reset">Reset</button>
-            </article>
-            <div class="imgbox">
-                <img src="./images/game-over.gif" alt="Game Over GIF">
-            </div>            
-        </section>
+      <section class="gameInfo">
+        <h2>Tic Tac Toe</h2>
+        <article>
+          <span class="info">X's Turn</span>
+          <button id="reset">Reset</button>
+        </article>
+        <div class="imgbox">
+          <img src="./images/game-over.gif" alt="Game Over GIF" />
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img src="" alt="img nt displayed">
-        <p> &copy; 2023 Play Mingle</p> 
-        <p>Created by Team 2 for Coding in Color </p>
-        </p>
-        <p>Play Mingle : Where Fun Meets Community
-        </p>
-        <p>Welcome to Play Mingle, your gateway to a world of engaging web games and social interaction.
-        </p>
-        <ul>
-            <li> Privacy Policy</li>
+      <section class="bigfoot">
+        <div><img src="./images/logo_components.png" /></div>
+
+        <article id="copy">
+          <p>&copy; 2023 Play Mingle</p>
+          <p>Created by Team 2 for Coding in Color</p>
+        </article>
+
+        <article id="play">
+          <p>Play Mingle : Where Fun Meets Community</p>
+          <p>
+            Welcome to Play Mingle, your gateway to a world of engaging web
+            games and social interaction.
+          </p>
+        </article>
+
+        <article id="points">
+          <ul>
+            <li>Privacy Policy</li>
             <li>Terms of Service</li>
-        </ul>
+          </ul>
+        </article>
+      </section>
     </footer>
     <script src="tictactoe.js"></script>
-</body>
+  </body>
 </html>
