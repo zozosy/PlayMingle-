@@ -25,7 +25,7 @@
           <select id="games-dropdown">
             <option value="game">Games</option>
             <option value="tic-tac-toe">TicTacToe</option>
-            <option value="hangman">hangman</option>
+            <option value="hangman">Hangman</option>
             <option value="RPS">Rock Paper Scissor</option>
             <option value="number-guesser">Number Guesser</option>
             <option value="number-guesser">Blacjack</option>
@@ -65,7 +65,7 @@
         <section id="top">
           <button id="back">Back</button>
           <h2>Number Guesser</h2>
-          <p>Score: 0</p>
+          <p id="ng_score">Score: 0</p>
         </section>
 
         <section id="game">
@@ -77,12 +77,12 @@
             min="0"
             max="100"
           />
-          <button>Select</button>
+          <button id="select">Select</button>
           <p>Number of attempts left: 5</p>
         </section>
 
         <section id="bottom">
-          <p>Sorry You Loose!!!</p>
+          <p id="winLoose">Sorry You Loose!!!</p>
           <button id="replay">Replay</button>
         </section>
       </section>
@@ -140,7 +140,6 @@
         </article>
       </section>
     </footer>
-
     <script src="numberGuesser.js"></script>
   </body>
 </html>
