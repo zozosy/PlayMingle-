@@ -189,17 +189,17 @@ span {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
 }
 
 #side_bar {
-    float: left;
-    width: 15%;
     background: rgba(235, 0, 0, 0.8);
     color: #FFF;
-    padding: 20px 20px 0px;
+    padding: 10px;
 }
 
 #side_bar h3 {
@@ -219,8 +219,15 @@ main {
     margin: 15px;
 }
 
+#Main_page {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 #objective {
     background: linear-gradient(to bottom, #000000, #ff0040);
     color: #ffffff;
-    float: left;
+    padding: 10px;
 }
