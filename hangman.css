@@ -69,7 +69,7 @@ span {
     height: 15vh;
     display: flex;
     justify-content: center;
-    margin-top: 100px ;
+    margin-top: 100px;
 }
 
 .greenBtn,
@@ -90,16 +90,16 @@ span {
     left: 0px;
     background: white;
     position: absolute;
-    bottom: 23%;
+    bottom: 2%;
 }
 
 .class-2 {
     height: 7px;
-    width: 70vh;
-    top: 40vh;
+    width: 64vh;
+    top: 35vh;
     background: white;
     position: absolute;
-    right: 300px;
+    right: 320px;
     transform: rotate(90deg);
 }
 
@@ -127,8 +127,8 @@ span {
     width: 80px;
     position: absolute;
     background-color: white;
-    left: 140px;
-    top: 135px;
+    left: 100px;
+    top: 130px;
     border-radius: 50%;
 }
 
@@ -148,7 +148,7 @@ span {
     top: 35vh;
     background: white;
     position: absolute;
-    right: 350px;
+    right: 340px;
     transform: rotate(20deg);
 }
 
@@ -182,59 +182,57 @@ span {
     transform: rotate(150deg);
 }
 
- .display-none {
+/* .display-none {
     display: none;
-} 
+} */
 
 main {
     padding: 3px;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
+    display: flex;
+    grid-template-columns: 20% 60% 20%;
 }
 
 #side_bar {
-    background: rgba(188, 0, 0, 0.8);
+    background: rgba(235, 0, 0, 0.8);
     color: #FFF;
-    padding: 10px  10px  0px;
-    border-radius: 3px;
+    padding: 0px;
 }
 
 #side_bar h3 {
-    color: #ffd500;
-    margin-bottom: 35px;
+    color: #ffbb00;
+    margin-bottom: 2px;
     font-family: sans-serif;
-    font-size: medium;
+    color: rgb(255, 196, 0);
+    font-size:medium;
+
 }
 
 #side_bar ul {
     list-style: circle;
     font-family: monospace;
-    font-size: medium;
-   
 }
 
 #side_bar li {
-    margin: 3px;
+    margin: 1px;
 }
 
 #Main_page {
-    padding: 1px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
 }
 
 #objective {
     font-size:small;
     background: linear-gradient(to bottom, #ff0000, #2a0808);
     color: #ffffff;
-    padding: 4px;
+    padding: 0px 10px 10px;
     border-radius: 15px;
     font-family: monospace;
+    flex:3;
 }
 
 #objective ul{
@@ -244,7 +242,7 @@ main {
 
 #objective h3{
     font-family:serif;
-    color: #ffea00;
+    color: #ffe100;
     margin-bottom: 5px;
     font-size: medium;
     
