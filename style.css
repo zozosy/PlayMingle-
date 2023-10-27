@@ -29,19 +29,20 @@ img {
     border: 2px solid #ffcc00;
     color: #ffcc00;
     border-radius: 75px;
+    
   
 }
 
 .logo {
     display: flex;
     border-radius: 5px;
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
     background: linear-gradient(to bottom, #ee0000, #000000);
     border-radius: 800px;
     border: 2px solid #e5ff00;
     box-shadow: 3px 3px 12px rgb(255, 0, 0);
     padding: 6px;
-}
+
+} 
 
 header h1 {
     font-size: 50px;
@@ -82,7 +83,22 @@ main {
     justify-content: space-between;
     padding: 15px 5px 15px;
     background: linear-gradient(to bottom, #000000, #2a0808);
-    font-family: cursive;
+    
+}
+
+main h3{
+    font-family: sans-serif;
+    color: #ffd900;
+    font-size: medium;
+    
+}
+
+
+
+main ul {
+    font-family: monospace;
+    font-size: large;
+    padding: 20px;
 }
 
 #side_bar {
@@ -137,12 +153,13 @@ main {
 
 #Contact-page strong {
     color: #ffcc00;
-    font-size: medium;
+    font-size: larger;
     padding: 1px;
 }
 
 #Contact-page img {
-    margin-right: 10px;
+    margin-right: 0px;
+
 }
 
 .container {
