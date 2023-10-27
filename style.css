@@ -26,20 +26,20 @@ header {
 }
 
 img {
-    border: 2px solid #d0ff00;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
     border-radius: 75px;
-    box-shadow: 3px 3px 12px rgb(234, 255, 0);
+  
 }
 
-
-.logo{
+.logo {
     display: flex;
     border-radius: 5px;
     text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
     background: linear-gradient(to bottom, #ee0000, #000000);
     border-radius: 800px;
-    border: 2px solid #d0ff00;
-    box-shadow: 3px 3px 12px rgb(255, 255, 0);
+    border: 2px solid #e5ff00;
+    box-shadow: 3px 3px 12px rgb(255, 0, 0);
     padding: 6px;
 }
 
@@ -77,45 +77,35 @@ nav a:hover {
 }
 
 main {
-    padding:20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     padding: 15px 5px 15px;
-    
+    background: linear-gradient(to bottom, #000000, #2a0808);
+    font-family: cursive;
 }
+
 #side_bar {
-
-
-    background: linear-gradient(to bottom, #fc0000, #f90404);
-    color: #ffcc00;
-
-    background: linear-gradient(to bottom, #fc0000, #000000);
-    color: #fffbec;
-
-    padding: 50px;
-    border-radius: 10px;
-    text-align: left;
-} 
+    background: rgba(235, 0, 0, 0.8);
+    color: #FFF;
+    padding: 10px;
+}
 
 #side_bar h3 {
-    font-size: 24px;
-    margin-top: 0;
-    color: #ff0000;
-    text-align: left;
-   
-    
+    color: #e1ff00;
+    margin-bottom: 24px;
+    font-family: monospace;
+    color: rgb(221, 255, 0);
+    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
 }
 
 #side_bar ul {
-    list-style: none;
-    padding: 0px;
-    text-align: left;
-  
+    list-style: circle;
+    font-family: monospace;
 }
 
 #side_bar li {
-    margin: 5px 0; 
-    text-align: left;
+    margin: 15px;
 }
 
 #Contact-page {
@@ -128,18 +118,14 @@ main {
     background: #000;
     color: #fff;
     padding: 20px;
-    
-
 }
 
 #Contact-page h1 {
     font-size: 36px;
     margin-top: 0;
-    color: #ddff00;
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
+    color: #ffcc00;
+    
 }
-
-
 
 #Contact-page p {
     font-size: 18px;
@@ -149,36 +135,41 @@ main {
     margin: 60px 0px 130px;
 }
 
-
-
-
-
 #Contact-page strong {
     color: #ffcc00;
-   font-size: medium;
-    padding: 1px ;
+    font-size: medium;
+    padding: 1px;
 }
 
-
-
-
 #Contact-page img {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .container {
-    background: linear-gradient(to bottom, #ff0000, #2a0808);
+    background: linear-gradient(to bottom, #ff0000, #360404);
     padding: 30px 35px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(255, 0, 0);
+   
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    flex: 1;
+    margin-right: 5px;
 }
 
 form label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
-    color: #f2ff00;
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
+    color: #ffcc00;
+   
 }
 
 form input,
@@ -208,82 +199,62 @@ form button:hover {
     text-shadow: 0 0 10px #ff0000;
 }
 
-
-
 footer {
-
     background: linear-gradient(to bottom, #333, #ff0000);
     padding: 6px 10px;
-
-   
 }
 
-
-
-.bigfoot{
+.bigfoot {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 #copy {
-    
     flex: 1;
     color: #ccc;
     text-align: left;
-    font-size:small;
+    font-size: small;
     padding: 10px 10px 15px;
-    
 }
 
-#copy p{
+#copy p {
     padding: 1px;
-
 }
 
-
-
-#play{
-  
-    flex:3;
+#play {
+    flex: 3;
     color: #ccc;
     text-align: left;
     padding: 5px;
     float: center;
-    
 }
 
 #points {
-    flex:1;
+    flex: 1;
     color: #ccc;
     text-align: left;
     padding: 10px 100px 15px;
-    
 }
 
 #points li {
-    margin:11%;
+    margin: 11%;
 }
 
 footer img {
-   
     width: 50px;
     height: 50px;
     font-size: x-small;
     float: left;
-    width:auto;
+    width: auto;
     border: #2a0808;
     border-radius: 5px;
     background: linear-gradient(to bottom, #b90a0a, #000000);
     border-radius: 800px;
     border: 2px solid #d0ff00;
-    box-shadow: 3px 3px 12px rgb(255, 255, 0);
+    box-shadow: 3px 3px 12px rgb(255, 0, 0);
     padding: 8px;
-} 
-
-
-
+}
 
 a:hover {
     color: #ff3366;
@@ -300,35 +271,33 @@ body {
 }
 
 
-
-
-
 /* Style the main content area */
+
 .Thumbnails {
-    
     float: center;
     width: 50%;
-    
 }
 
+
 /* Styling thumbnails lol */
+
 .Thumbnails {
-   
     background: linear-gradient(to bottom, #fe0000, #000000);
     border: 2px solid #d0ff00;
     box-shadow: 3px 3px 12px rgb(255, 255, 0);
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align:center;
+    text-align: center;
     justify-content: space-between;
-    align-items:left;
+    align-items: left;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     padding: 5px 0px 4px;
     margin: 55px;
-    text-align:center;
+    text-align: center;
     border-radius: 3px;
-    
 }
 
-
-
+.Thumbnails h3 {
+    color: #fccccc;
+    text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0);
+    font-family:sans-serif;
+    font-size:x-large;
+}

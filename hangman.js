@@ -252,6 +252,10 @@ function giveMeButtonsOnScreen() {
         const btn = document.createElement("button");
         btn.textContent = el;
         rootEl.appendChild(btn);
+        btn.style.fontSize = "1rem";
+        btn.style.width = "40px";
+        btn.style.height = "40px";
+        btn.style.margin = "5px";
     });
 }
 
@@ -268,6 +272,8 @@ function chooseRandomAnimalName() {
         para.textContent = letter;
         alpha.appendChild(para);
         blankParentEl.appendChild(alpha);
+        alpha.style.fontSize = "20px";
+        alpha.style.margin = "5px";
     }
 }
 
@@ -316,7 +322,7 @@ const buttonParentClickFunction = function(e) {
     }
 
     if (checkStatusGlobal == randomAnimalName.length) {
-        alert("You won the Game bro");
+        alert("You won the Game");
         location.reload();
     }
 };
