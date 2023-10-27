@@ -182,9 +182,9 @@ span {
     transform: rotate(150deg);
 }
 
-/* .display-none {
+.display-none {
     display: none;
-} */
+}
 
 main {
     padding: 3px;
