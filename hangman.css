@@ -182,9 +182,9 @@ span {
     transform: rotate(150deg);
 }
 
-/* .display-none {
+.display-none {
     display: none;
-} */
+}
 
 main {
     padding: 3px;
@@ -232,7 +232,7 @@ main {
     padding: 0px 10px 10px;
     border-radius: 15px;
     font-family: monospace;
-    flex:3;
+    flex:8;
 }
 
 #objective ul{
@@ -247,3 +247,13 @@ main {
     font-size: medium;
     
 }
+
+.heading{
+    font-size:large;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ff0000;
+    text-decoration:underline;
+    margin:0px;
+}
+
