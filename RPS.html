@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlayMingle</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="RPS.css" />
   </head>
   <body>
     <header>
@@ -60,66 +61,43 @@
         </ul>
       </section>
 
-      <section id="Main_page">
-        <article class="Thumbnails">
-          <a href="tic-tac-toe.html">
-            <img
-              src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU"
-              height="250"
-              width="250"
-            />
-          </a>
-          <h3>Tic-Tac-Toe</h3>
-          <p>
-            Strategically place Xs and Os to outwit your opponent in this
-            classic game of wits and strategy.
-          </p>
-        </article>
-
-        <article class="Thumbnails">
-          <a href="hangman.html">
-            <img
-              src="https://camo.githubusercontent.com/b06f7228a60a65cdf010c6301c97d2bba910790e56f8834c0cdb54d9c9610d1f/687474703a2f2f6563782e696d616765732d616d617a6f6e2e636f6d2f696d616765732f492f3831787432253242504430494c2e706e67"
-              height="250"
-              width="250"
-            />
-          </a>
-          <h3>Hangman</h3>
-          <p>
-            Guess the hidden word before you runs out of your moves in this
-            word-guessing game.
-          </p>
-        </article>
-
-        <article class="Thumbnails">
-          <a href="RPS.html">
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1400/1*hPhzeFD3htF7ly1AMmAVbw.png"
-              height="250"
-              width="250"
-            />
-          </a>
-          <h3>Rock Paper Scissor</h3>
-          <p>
-            Quickly decide your move and challenge your opponent in the ultimate
-            hand-based showdown.
-          </p>
-        </article>
-
-        <article class="Thumbnails">
-          <a href="number-guesser.html">
-            <img
-              src="https://content.instructables.com/FGE/F6F0/K1NVATVK/FGEF6F0K1NVATVK.jpg?auto=webp"
-              height="250"
-              width="250"
-            />
-          </a>
-          <h3>Number Guesser</h3>
-          <p>
-            Test your number intuition by guessing the correct number within a
-            specified range.
-          </p>
-        </article>
+ 
+        <section class="wrapper">
+            <article class="buttons">
+              <button class="rpsButton" value="Rock">✊</button>
+              <button class="rpsButton" value="Paper">🤚</button>
+              <button class="rpsButton" value="Scissors">✌️</button>
+            </article>
+            <article class="resultContainer">
+              <div id="player-score"></div>
+              <div id="hands"></div>
+              <div id="result"></div>
+              <button id='endGameButton'>🔴</button>
+            </article>
+        </section>
+        
+      <section id="obective">
+        <h3>Obective</h3>
+        <p>
+            The objective of Rock, Paper, Scissors is to win a series of quick rounds by choosing one of three hand signs (rock, paper, or scissors) that can defeat your opponent's choice based on simple rules
+        </p>
+        <h3>How to play</h3>
+        <ul>
+          <li>Choose a signal (e.g., "Rock, Paper, Scissors, Shoot!").
+          </li>
+          <li>
+            Both players form one of three hand signs simultaneously: Rock, Paper, or Scissors.
+          </li>
+          <li>
+            Determine the round winner based on the rules
+          </li>
+          <li>
+            Play multiple rounds, typically best out of three.
+          </li>
+          <li>
+            The player who wins the majority of rounds is the overall winner.
+          </li>
+        </ul>
       </section>
     </main>
 
@@ -149,14 +127,6 @@
       </section>
     </footer>
 
-    <script>
-      var select = document.getElementById("games-dropdown");
-      select.addEventListener("change", function () {
-        var selectedOption = select.options[select.selectedIndex].value;
-        if (selectedOption) {
-          window.location.href = selectedOption + ".html";
-        }
-      });
-    </script>
+    <script src="RPS.js"></script>
   </body>
 </html>

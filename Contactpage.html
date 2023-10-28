@@ -1,105 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayMingle</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
+      <section class="logo">
+        <img
+          src="./images/logo_components.png"
+          height=" 150"
+          width="150"
+          alt="unable to load"
+        />
+      </section>
+      <nav>
         <h1 class="neon-text">Play Mingle</h1>
-        <nav>
-            <ul>
-                <a class="neon-text" href>Home</a>
-                <a class="neon-text" href>Games</a>
-                <a class="neon-text" href>Contact</a>
-                <a class="neon-text" href>Login</a>
-                <a class="neon-text" href>Leaderboard</a>
-            </ul>
-        </nav>
+        <ul>
+          <a class="neon-text" href="playmingle.html">Home</a>
+          <a class="neon-text" href="tic-tac-toe.html">Games</a>
+          <select id="games-dropdown">
+            <option value="game">Games</option>
+            <option value="tic-tac-toe">TicTacToe</option>
+            <option value="hangman">Hangman</option>
+            <option value="RPS">Rock Paper Scissor</option>
+            <option value="number-guesser">Number Guesser</option>
+            <option value="number-guesser">Blacjack</option>
+          </select>
+          <a class="neon-text" href="Contactpage.html">Contact</a>
+          <a class="neon-text" href>Login</a>
+          <a class="neon-text" href>Leaderboard</a>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section id=" side_bar">
-          <h5>Recommended</h5>
-         <ul>
-            <li>Friends</li>
-            <li>Tags</li>
-         </ul><br>
-          <h5>Browse Categories</h5>
-         <ul>
-            <li>New Released</li>
-            <li>Top Seller</li>
-            <li>Special</li>
-            <li>Upcoming</li>
-         </ul><br>
-         <h5>Browse by Genre</h5>
-         <ul>
-            <li>Arcade</li>
-            <li>Logical</li>
-            <li>Casual</li>
-            <li>Indie</li>
-            <li>Early Release</li>
-        </ul><br>
+        <h3>Recommended</h3>
+        <ul>
+          <li>Friends</li>
+          <li>Tags</li>
+        </ul>
+        <br />
+        <h3>Browse Categories</h3>
+        <ul>
+          <li>New Released</li>
+          <li>Top Seller</li>
+          <li>Special</li>
+          <li>Upcoming</li>
+        </ul>
+        <br />
+        <h3>Browse by Genre</h3>
+        <ul>
+          <li>Arcade</li>
+          <li>Logical</li>
+          <li>Casual</li>
+          <li>Indie</li>
+          <li>Early Release</li>
+        </ul>
+        <br />
       </section>
 
-    <section id="Contact-page">
-          <h1>Contact:</h1>
-          <strong>Don't hesitate to contact us</strong>
-          <h3>Get in touch!</h3>
-          <p>We're here to help! If you have any questions, feedback, or just want to say hello, feel free to reach out. Your input is important to us, and we're excited to hear from you.</p>
-           <p> We'll get back to you as soon as possible. Thank you for being a part of the Play Mingle community!</p>
-         <ul>
-             <img src="" alt="img nt displayed">
-             <strong>+1 2345678901</strong><br><br>
-             <img src="" alt="img nt displayed">
-             <strong>team2@gmail.com</strong><br>
-         </ul>
-    </section>
-
-    <div class="container">
-        <form action="mailto:team2@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Enter valid Email address:</label><br>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="about">Contacting about</label><br>
-            <input type="about" id="about" name="about" required><br> 
-
-            <label for="message">Enter your Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-        </form>
-
-        <form action="terms" method="post">
-            <label for="acceptTerms">I accept the terms and conditions:</label>
-            <input type="checkbox" id="acceptTerms" name="acceptTerms">
-            <br><br>
-            <button type="submit">Submit</button><br><br>
-        </form>
-    </div>
-    </main>
-
-
-    <footer>
-     <section>
-        <img src="" alt="img nt displayed">
-        <p> &copy; 2023 Play Mingle</p> 
-        <p>Created by Team 2 for Coding in Color </p>
+      <section id="Contact-page">
+        <h1>Contact:</h1>
+        <strong>Don't hesitate to contact us</strong>
+        <h3>Get in touch!</h3>
+        <p>
+          We're here to help! If you have any questions, feedback, or just want
+          to say hello, feel free to reach out. Your input is important to us,
+          and we're excited to hear from you.
         </p>
-        <p>Play Mingle : Where Fun Meets Community
-        </p>
-        <p>Welcome to Play Mingle, your gateway to a world of engaging web games and social interaction.
+        <p>
+          We'll get back to you as soon as possible. Thank you for being a part
+          of the Play Mingle community!
         </p>
         <ul>
-            <li> Privacy Policy</li>
-            <li>Terms of Service</li>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/015/720/174/original/eps10-white-phone-call-or-telephone-abstract-icon-isolated-on-black-background-contact-us-or-hotline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-app-vector.jpg"
+            height="30"
+            width="30"
+            alt="img nt displayed"
+          />
+          
+          <strong>+1 2345678901</strong
+          ><br /><br />
+          <img
+            src="https://www.logo.wine/a/logo/Gmail/Gmail-Logo.wine.svg"
+            height="30"
+            width="30"
+            alt="img nt displayed"
+          />
+          <strong>team2@gmail.com</strong
+          ><br />
+        
         </ul>
-     </section>
-    </footer>
-     
+      </section>
 
-</body>
+      <div class="container">
+        <form
+          action="mailto:team2@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Enter valid Email address:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="about">Contacting about</label><br />
+          <input type="about" id="about" name="about" required /><br />
+
+          <label for="message">Enter your Message:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br />
+
+          <label for="acceptTerms" class="checkbox-label">
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" />
+            I accept the terms and conditions
+          </label>
+
+          <button type="submit">Submit</button><br /><br />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <section class="bigfoot">
+        <div><img src="./images/logo_components.png" /></div>
+
+        <article id="copy">
+          <p>&copy; 2023 Play Mingle</p>
+          <p>Created by Team 2 for Coding in Color</p>
+        </article>
+
+        <article id="play">
+          <p>Play Mingle : Where Fun Meets Community</p>
+          <p>
+            Welcome to Play Mingle, your gateway to a world of engaging web
+            games and social interaction.
+          </p>
+        </article>
+
+        <article id="points">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </article>
+      </section>
+    </footer>
+    <script>
+      var select = document.getElementById("games-dropdown");
+      select.addEventListener("change", function () {
+        var selectedOption = select.options[select.selectedIndex].value;
+        if (selectedOption) {
+          window.location.href = selectedOption + ".html";
+        }
+      });
+    </script>
+  </body>
 </html>
