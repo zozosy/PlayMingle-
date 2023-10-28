@@ -2,7 +2,8 @@
 
   // Get DOM elements
   const numericInput = document.getElementById('numericInput');
-  const selectButton = document.querySelector('button');
+  const selectButton = document.getElementById('select');
+  const backButton = document.getElementById('back');
   const attemptsText = document.querySelector('#game p');
   const resultText = document.querySelector('#bottom p');
   const replayButton = document.getElementById('replay');
@@ -48,6 +49,11 @@
       numericInput.value = '';
   }
 
+  // Event listeren for "Back" button
+  backButton.addEventListener('click', () => {
+      window.location.href = 'playmingle.html';
+  });
+
   // Event listener for the "Select" button
   selectButton.addEventListener('click', updateGameState);
 
@@ -55,11 +61,11 @@
   replayButton.addEventListener('click', () => {
       // Reset the game state
       attemptsLeft = 5;
-      score = 0;
+      //   score = 0;
       replayButton.style.display = 'none';
       selectButton.disabled = false;
       resultText.textContent = '';
-      scoreText.textContent = 'Score: 0';
+      //   scoreText.textContent = 'Score: 0';
       attemptsText.textContent = 'Number of attempts left: 5';
       targetNumber = Math.floor(Math.random() * 101);
   });
