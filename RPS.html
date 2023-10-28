@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlayMingle</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="RPS.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="RPS.css" />
+  </head>
+  <body>
     <header>
-        <section class="logo">
-            <img src= "./images/logo_components.png" height=" 150" width= "150" alt="unable to load" />
-       </section>
-        <nav>
-            <h1 class="neon-text">Play Mingle</h1>
-            <ul>
-                <a class="neon-text" href="playmingle.html">Home</a>
-                <a class="neon-text" href="tic-tac-toe.html">Games</a>
-                <select id="games-dropdown">
-                    <option value="game">Games</option>
-                    <option value="tic-tac-toe">TicTacToe</option>
-                    <option value="hangman">Hangman</option>
-                    <option value="RPS">Rock Paper Scissor</option>
-                    <option value="number-guesser">Number Guesser</option>
-                    <option value="number-guesser">Blacjack</option>
-                </select>
-                <a class="neon-text" href="Contactpage.html">Contact</a>
-                <a class="neon-text" href>Login</a>
-                <a class="neon-text" href>Leaderboard</a>
-            </ul>
-        </nav>
+      <section class="logo">
+        <img
+          src="./images/logo_components.png"
+          height=" 150"
+          width="150"
+          alt="unable to load"
+        />
+      </section>
+      <nav>
+        <h1 class="neon-text">Play Mingle</h1>
+        <ul>
+          <a class="neon-text" href="playmingle.html">Home</a>
+          <a class="neon-text" href="tic-tac-toe.html">Games</a>
+          <select id="games-dropdown">
+            <option value="game">Games</option>
+            <option value="tic-tac-toe">TicTacToe</option>
+            <option value="hangman">Hangman</option>
+            <option value="RPS">Rock Paper Scissor</option>
+            <option value="number-guesser">Number Guesser</option>
+            <option value="number-guesser">Blacjack</option>
+          </select>
+          <a class="neon-text" href="Contactpage.html">Contact</a>
+          <a class="neon-text" href>Login</a>
+          <a class="neon-text" href>Leaderboard</a>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section id=" side_bar">
-          <h3>Recommended</h3>
-         <ul>
-            <li>Friends</li>
-            <li>Tags</li>
-         </ul>
-          <h3>Browse Categories</h3>
-         <ul>
-            <li>New Released</li>
-            <li>Top Seller</li>
-            <li>Special</li>
-            <li>Upcoming</li>
-         </ul>
-         <h3>Browse by Genre</h3>
-         <ul>
-             <li>Arcade</li>
-            <li>Logical</li>
-            <li>Casual</li>
-            <li>Indie</li>
-            <li>Early Release</li>
-        </ul>  
+      <section id="side_bar">
+        <h3>Recommended</h3>
+        <ul>
+          <li>Friends</li>
+          <li>Tags</li>
+        </ul>
+        <h3>Browse Categories</h3>
+        <ul>
+          <li>New Released</li>
+          <li>Top Seller</li>
+          <li>Special</li>
+          <li>Upcoming</li>
+        </ul>
+        <h3>Browse by Genre</h3>
+        <ul>
+          <li>Arcade</li>
+          <li>Logical</li>
+          <li>Casual</li>
+          <li>Indie</li>
+          <li>Early Release</li>
+        </ul>
       </section>
 
+ 
         <section class="wrapper">
             <article class="buttons">
               <button class="rpsButton" value="Rock">✊</button>
@@ -70,31 +75,58 @@
               <button id='endGameButton'>🔴</button>
             </article>
         </section>
+        
+      <section id="obective">
+        <h3>Obective</h3>
+        <p>
+            The objective of Rock, Paper, Scissors is to win a series of quick rounds by choosing one of three hand signs (rock, paper, or scissors) that can defeat your opponent's choice based on simple rules
+        </p>
+        <h3>How to play</h3>
+        <ul>
+          <li>Choose a signal (e.g., "Rock, Paper, Scissors, Shoot!").
+          </li>
+          <li>
+            Both players form one of three hand signs simultaneously: Rock, Paper, or Scissors.
+          </li>
+          <li>
+            Determine the round winner based on the rules
+          </li>
+          <li>
+            Play multiple rounds, typically best out of three.
+          </li>
+          <li>
+            The player who wins the majority of rounds is the overall winner.
+          </li>
+        </ul>
+      </section>
     </main>
 
-
     <footer>
-        <section class="bigfoot">
-            <div><img src="./images/logo_components.png"></div>
-            
-           <article id="copy">
-   
-           <p> &copy; 2023 Play Mingle</p> 
-           <p>Created by Team 2 for Coding in Color </p></article>
-           
-           <article id= "play" > 
-           <p>Play Mingle : Where Fun Meets Community</p>
-           <p>Welcome to Play Mingle, your gateway to a world of engaging web games and social interaction.</article>
-   
-           <article id="points"> <ul>
-               <li>Privacy Policy</li>
-               <li>Terms of Service</li>
-           </ul></article>
-          
-           
-        </section>
+      <section class="bigfoot">
+        <div><img src="./images/logo_components.png" /></div>
+
+        <article id="copy">
+          <p>&copy; 2023 Play Mingle</p>
+          <p>Created by Team 2 for Coding in Color</p>
+        </article>
+
+        <article id="play">
+          <p>Play Mingle : Where Fun Meets Community</p>
+          <p>
+            Welcome to Play Mingle, your gateway to a world of engaging web
+            games and social interaction.
+          </p>
+        </article>
+
+        <article id="points">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </article>
+      </section>
     </footer>
-     
+
     <script src="RPS.js"></script>
-</body>
+  </body>
 </html>
