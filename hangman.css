@@ -2,24 +2,24 @@
     font-size: 40px;
     letter-spacing: 2px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
 }
 
 #root {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
 }
 
 .hangstand {
-    width: 38vw;
+    width: 40vw;
     position: relative;
 }
 
 button {
-    background-color: #d0ff00;
+    background-color: #fff200;
     border: none;
     font-size: 2rem;
     font-weight: 600;
@@ -41,9 +41,7 @@ button {
 button:hover {
     cursor: pointer;
     background: linear-gradient(to bottom, #f2a922, #ff0000b1);
-    text-shadow: 0 0 10px #ff0000;
-    color: #ffea00;
-    text-shadow: 0 0 10px #ff0000;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
@@ -68,10 +66,10 @@ span {
 }
 
 .blanks_parent {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .greenBtn,
@@ -92,16 +90,16 @@ span {
     left: 0px;
     background: white;
     position: absolute;
-    bottom: 23%;
+    bottom: 2%;
 }
 
 .class-2 {
     height: 7px;
-    width: 70vh;
-    top: 40vh;
+    width: 64vh;
+    top: 35vh;
     background: white;
     position: absolute;
-    right: 300px;
+    right: 320px;
     transform: rotate(90deg);
 }
 
@@ -129,8 +127,8 @@ span {
     width: 80px;
     position: absolute;
     background-color: white;
-    left: 140px;
-    top: 135px;
+    left: 100px;
+    top: 130px;
     border-radius: 50%;
 }
 
@@ -150,7 +148,7 @@ span {
     top: 35vh;
     background: white;
     position: absolute;
-    right: 350px;
+    right: 340px;
     transform: rotate(20deg);
 }
 
@@ -189,25 +187,26 @@ span {
 }
 
 main {
-    padding: 10px;
+    padding: 3px;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
+    display: flex;
+    grid-template-columns: 20% 60% 20%;
 }
 
 #side_bar {
     background: rgba(235, 0, 0, 0.8);
     color: #FFF;
-    padding: 10px;
+    padding: 0px;
 }
 
 #side_bar h3 {
-    color: #e1ff00;
-    margin-bottom: 24px;
-    font-family: monospace;
-    color: rgb(221, 255, 0);
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
+    color: #ffbb00;
+    margin-bottom: 2px;
+    font-family: sans-serif;
+    color: rgb(255, 196, 0);
+    font-size:medium;
+
 }
 
 #side_bar ul {
@@ -216,18 +215,45 @@ main {
 }
 
 #side_bar li {
-    margin: 15px;
+    margin: 1px;
 }
 
 #Main_page {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #objective {
-    background: linear-gradient(to bottom, #000000, #ff0040);
+    font-size:small;
+    background: linear-gradient(to bottom, #ff0000, #2a0808);
     color: #ffffff;
-    padding: 10px;
+    padding: 0px 10px 10px;
+    border-radius: 15px;
+    font-family: monospace;
+    flex:8;
 }
+
+#objective ul{
+    font-size:small;
+    font-family: monospace;
+}
+
+#objective h3{
+    font-family:serif;
+    color: #ffe100;
+    margin-bottom: 5px;
+    font-size: medium;
+    
+}
+
+.heading{
+    font-size:large;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ff0000;
+    text-decoration:underline;
+    margin:0px;
+}
+
