@@ -79,7 +79,23 @@ main {
 
 #objective {
     flex: 1;
-    background: linear-gradient(to bottom, #000000, #ff0000);
+    font-size:small;
+    background: linear-gradient(to bottom, #ff0000, #2a0808);
     color: #ffffff;
-    padding: 10px;
+    padding: 0px 10px 10px;
+    border-radius: 15px;
+    font-family: monospace;
+}
+
+#objective ul{
+    font-size:small;
+    font-family: monospace;
+}
+
+#objective h3{
+    font-family:serif;
+    color: #ffe100;
+    margin-bottom: 5px;
+    font-size: medium;
+    
 }
