@@ -226,9 +226,11 @@ const randomAnimalsNames = [
 ];
 
 let totalChances = 0;
+let score = 0;
 
 const hangStandChildren = document.querySelector(".hangstand").children;
 const backButton = document.getElementById('back');
+const scoreText = document.getElementById('score');
 
 for (let index = 0; index < hangStandChildren.length; index++) {
     const element = hangStandChildren[index];
@@ -327,6 +329,8 @@ const buttonParentClickFunction = function(e) {
     }
 
     if (checkStatusGlobal == randomAnimalName.length) {
+        score++;
+        scoreText.textContent = `Score: ${score}`;
         alert("You won the Game");
         location.reload();
     }
