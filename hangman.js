@@ -676,4 +676,8 @@ select.addEventListener("change", function() {
     if (selectedOption) {
         window.location.href = selectedOption + ".html";
     }
+
+   
 });
+
+

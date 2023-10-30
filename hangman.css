@@ -248,12 +248,16 @@ main {
     
 }
 
-.heading{
-    font-size:large;
-    text-align: center;
-    font-family: sans-serif;
-    color: #ff0000;
-    text-decoration:underline;
-    margin:0px;
+.class {
+    
+        text-align: center;
+        font-size: 48px;
+        margin: 0px 20px 0px 20px;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        background: url(./images/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 1s linear infinite;
+    
 }
-
