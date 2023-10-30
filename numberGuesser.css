@@ -8,16 +8,6 @@ main {
 }
 
 
-/* Style the side_bar section */
-
-#NGside_bar {
-    flex: 1;
-    background: linear-gradient(to bottom, #ff0000, #000000);
-    color: #ffffff;
-    padding-left: 10px;
-}
-
-
 /* Style the template section */
 
 #template {
@@ -35,19 +25,16 @@ main {
     display: flex;
     flex-direction: row;
     text-align: center;
-    /* Center the text horizontally */
     margin: 10px 0;
 }
 
 #game {
     text-align: center;
-    /* Center the content horizontally */
     margin: 10px 0;
 }
 
 #bottom {
     text-align: center;
-    /* Center the content horizontally */
     margin: 10px 0;
 }
 
@@ -65,17 +52,31 @@ main {
 
 #top button {
     text-align: left;
-    margin: 0px 50px 0px 50px;
+    margin: 20px 50px 0px 50px;
+    height: 30px;
 }
 
 #top h2 {
     text-align: center;
-    margin: 0px 50px 0px 50px;
+    font-size: 48px;
+    margin: 0px 20px 0px 20px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(./images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 1s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 200px 0;
+    }
 }
 
 #top p {
     text-align: right;
-    margin: 7px 50px 0px 50px;
+    margin: 25px 50px 0px 50px;
 }
 
 
@@ -83,8 +84,26 @@ main {
 
 #objective {
     flex: 1;
-    /* Takes up 1/5 of the available space */
     background: linear-gradient(to bottom, #000000, #ff0000);
     color: #ffffff;
     padding: 10px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+button:hover {
+    background-color: #777777;
 }
