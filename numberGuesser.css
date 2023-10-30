@@ -25,7 +25,6 @@ main {
     display: flex;
     flex-direction: row;
     text-align: center;
-    /* Center the text horizontally */
     margin: 10px 0;
 }
 
