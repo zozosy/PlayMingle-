@@ -29,7 +29,7 @@
             <option value="number-guesser">Number Guesser</option>
             <option value="number-guesser">Blacjack</option>
           </select>
-          <a class="neon-text" href="Contactpage.html">Contact</a>
+          <a class="neon-text active" href="Contactpage.html">Contact</a>
           <a class="neon-text" href>Login</a>
           <a class="neon-text" href>Leaderboard</a>
         </ul>
@@ -65,17 +65,21 @@
 
       <section id="Contact-page">
         <h1>Contact:</h1>
-        <strong>Don't hesitate to contact us</strong>
+        <strong>Thank you for your interest in Play Mingle!</strong>
         <h3>Get in touch!</h3>
         <p>
-          We're here to help! If you have any questions, feedback, or just want
-          to say hello, feel free to reach out. Your input is important to us,
-          and we're excited to hear from you.
+          We're here to assist you and provide the information you need. 
+          Feel free to contact us for general inquiries.
+          We appreciate your engagement with
+           our game and are always eager to hear from our players and community
         </p>
-        <p>
-          We'll get back to you as soon as possible. Thank you for being a part
-          of the Play Mingle community!
-        </p>
+__________________________________________________________________
+        <h2>About:</h2>  
+        <p>Welcome to Play Mingle, the ultimate collection of classic and modern games in one place.
+           Enjoy classics like Tic-Tac-Toe, Hangman, Rock-Paper-Scissors and Number Guesser.
+           With easy-to-use controls, it's fun for all ages. Whether you're a casual gamer or a pro, there's something here for you.
+           </p>
+           <strong> Dive in and play it all in one game!"</strong>
         <ul>
           <img
             src="https://static.vecteezy.com/system/resources/previews/015/720/174/original/eps10-white-phone-call-or-telephone-abstract-icon-isolated-on-black-background-contact-us-or-hotline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-app-vector.jpg"
@@ -111,7 +115,12 @@
           <input type="email" id="email" name="email" required /><br />
 
           <label for="about">Contacting about</label><br />
-          <input type="about" id="about" name="about" required /><br />
+          <select id="contacting_about">
+            <option value="select">select</option>
+            <option value="Email">Email</option>
+            <option value="Phone Number">Phone Number</option>
+            <option value="Social Links">Social Links</option>
+          </select>
 
           <label for="message">Enter your Message:</label><br />
           <textarea id="message" name="message" rows="4" required></textarea
@@ -161,5 +170,15 @@
         }
       });
     </script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
   </body>
 </html>
+
+
