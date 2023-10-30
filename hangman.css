@@ -205,8 +205,7 @@ main {
     margin-bottom: 2px;
     font-family: sans-serif;
     color: rgb(255, 196, 0);
-    font-size:medium;
-
+    font-size: medium;
 }
 
 #side_bar ul {
@@ -226,34 +225,53 @@ main {
 }
 
 #objective {
-    font-size:small;
+    font-size: small;
     background: linear-gradient(to bottom, #ff0000, #2a0808);
     color: #ffffff;
     padding: 0px 10px 10px;
     border-radius: 15px;
     font-family: monospace;
-    flex:8;
+    flex: 8;
 }
 
-#objective ul{
-    font-size:small;
+#objective ul {
+    font-size: small;
     font-family: monospace;
 }
 
-#objective h3{
-    font-family:serif;
+#objective h3 {
+    font-family: serif;
     color: #ffe100;
     margin-bottom: 5px;
     font-size: medium;
-    
 }
 
-.heading{
-    font-size:large;
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
     font-family: sans-serif;
-    color: #ff0000;
-    text-decoration:underline;
-    margin:0px;
+    text-decoration: underline;
+    margin: 10px;
 }
 
+.heading button {
+    text-align: center;
+    margin: 20px 50px 0px 50px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0px 20px 0px 20px;
+    color: #ff0000;
+}
+
+.heading h3 {
+    text-align: right;
+    margin: 25px 50px 0px 50px;
+}
