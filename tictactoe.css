@@ -7,6 +7,43 @@ main {
     flex: 2;
 }
 
+#top {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px;
+}
+
+#top button {
+    text-align: left;
+    margin: 20px 50px 0px 50px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#top h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0px 50px 0px 50px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url(./images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 1s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+#top p {
+    text-align: right;
+    margin: 25px 20px 20px 0;
+}
+
 .tttgrid {
     flex: 4;
     display: grid;
@@ -23,14 +60,6 @@ main {
     box-shadow: 3px 3px 12px rgb(255, 255, 0);
     text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
     background: linear-gradient(to bottom, #ee0000, #000000);
-}
-
-.gameInfo {
-    flex: 2;
-}
-
-#objective {
-    flex: 2;
 }
 
 .box {
@@ -51,7 +80,7 @@ main {
 }
 
 #objective {
-    flex: 1;
+    flex: 2;
     /* Takes up 1/5 of the available space */
     background: linear-gradient(to bottom, #000000, #ff0040);
     color: #ffffff;

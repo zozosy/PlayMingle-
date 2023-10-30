@@ -4,6 +4,11 @@ let audioTurn = new Audio("Audio/ting.mp3");
 let gameover = new Audio("Audio/gameover.mp3");
 let turn = "X";
 let isgameover = false;
+let scoreX = 0;
+let scoreO = 0;
+const backButton = document.getElementById('back');
+const scoreTextX = document.getElementById('xScore');
+const scoreTextO = document.getElementById('oScore');
 
 // Function to change the turn
 const changeTurn = () => {
@@ -30,6 +35,13 @@ const checkWin = () => {
             boxtext[e[0]].innerText !== ""
         ) {
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won";
+            if (boxtext[e[0]].innerText === 'X') {
+                scoreX++;
+                scoreTextX.textContent = `X's Score: ${scoreX}`;
+            } else {
+                scoreO++;
+                scoreTextO.textContent = `O's Score: ${scoreO}`;
+            }
             isgameover = true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
             document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
