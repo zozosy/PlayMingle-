@@ -61,39 +61,47 @@
         </ul>
       </section>
 
- 
-        <section class="wrapper">
-            <article class="buttons">
-              <button class="rpsButton" value="Rock">✊</button>
-              <button class="rpsButton" value="Paper">🤚</button>
-              <button class="rpsButton" value="Scissors">✌️</button>
-            </article>
-            <article class="resultContainer">
-              <div id="player-score"></div>
-              <div id="hands"></div>
-              <div id="result"></div>
-              <button id='endGameButton'>🔴</button>
-            </article>
+      <section id="main_page">
+        <section id="top">
+          <button id="back">
+            <span class="button_icon"
+              ><ion-icon name="arrow-back-outline"></ion-icon
+            ></span>
+            <span class="button_text">Back</span>
+          </button>
+          <h2>Rock Paper Scissor</h2>
         </section>
-        
-      <section id="obective">
-        <h3>Obective</h3>
+        <section class="wrapper">
+          <article class="buttons">
+            <button class="rpsButton" value="Rock">✊</button>
+            <button class="rpsButton" value="Paper">🤚</button>
+            <button class="rpsButton" value="Scissors">✌️</button>
+          </article>
+          <article class="resultContainer">
+            <div id="player-score"></div>
+            <div id="hands"></div>
+            <div id="result"></div>
+            <button id="endGameButton">🔴</button>
+          </article>
+        </section>
+      </section>
+
+      <section id="objective">
+        <h3>Objective</h3>
         <p>
-            The objective of Rock, Paper, Scissors is to win a series of quick rounds by choosing one of three hand signs (rock, paper, or scissors) that can defeat your opponent's choice based on simple rules
+          The objective of Rock, Paper, Scissors is to win a series of quick
+          rounds by choosing one of three hand signs (rock, paper, or scissors)
+          that can defeat your opponent's choice based on simple rules
         </p>
         <h3>How to play</h3>
         <ul>
-          <li>Choose a signal (e.g., "Rock, Paper, Scissors, Shoot!").
-          </li>
+          <li>Choose a signal (e.g., "Rock, Paper, Scissors, Shoot!").</li>
           <li>
-            Both players form one of three hand signs simultaneously: Rock, Paper, or Scissors.
+            Both players form one of three hand signs simultaneously: Rock,
+            Paper, or Scissors.
           </li>
-          <li>
-            Determine the round winner based on the rules
-          </li>
-          <li>
-            Play multiple rounds, typically best out of three.
-          </li>
+          <li>Determine the round winner based on the rules</li>
+          <li>Play multiple rounds, typically best out of three.</li>
           <li>
             The player who wins the majority of rounds is the overall winner.
           </li>
@@ -128,5 +136,13 @@
     </footer>
 
     <script src="RPS.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
