@@ -1,4 +1,3 @@
-// Get DOM elements
 const numericInput = document.getElementById('numericInput');
 const selectButton = document.getElementById('select');
 const backButton = document.getElementById('back');
@@ -7,10 +6,8 @@ const resultText = document.querySelector('#bottom p');
 const replayButton = document.getElementById('replay');
 const scoreText = document.querySelector('#top p');
 
-// Set the target number (randomly between 0 and 100)
 const targetNumber = Math.floor(Math.random() * 101);
 
-// Initialize game variables
 let attemptsLeft = 5;
 let score = 0;
 
@@ -39,11 +36,9 @@ function updateGameState() {
         }
     }
 
-    // Update the score and attempts text
     scoreText.textContent = `Score: ${score}`;
     attemptsText.textContent = `Number of attempts left: ${attemptsLeft}`;
 
-    // Clear the input field
     numericInput.value = '';
 }
 
