@@ -4,6 +4,11 @@ function getComputerChoice() {
     return computerChoice
 }
 
+const backButton = document.getElementById('back');
+backButton.addEventListener('click', () => {
+    window.location.href = 'playmingle.html';
+});
+
 var select = document.getElementById("games-dropdown");
 select.addEventListener("change", function() {
     var selectedOption = select.options[select.selectedIndex].value;
@@ -78,26 +83,15 @@ function onClickRPS(playerChoice) {
 
 // ** Make the RPS buttons actively listen for a click and do something once a click is detected **
 function playGame() {
-    // use querySelector to select all RPS Buttons
     let rpsButtons = document.querySelectorAll('.rpsButton')
-
-    // * Adds an on click event listener to each RPS button and every time you click it, it calls the onClickRPS function with the RPS button that was last clicked *
-
-    // 1. loop through the buttons using a forEach loop
-    // 2. Add a 'click' event listener to each button
-    // 3. Call the onClickRPS function every time someone clicks
-    // 4. Make sure to pass the currently selected rps button as an argument
-
     rpsButtons.forEach(rpsButton => {
         rpsButton.onclick = () => onClickRPS(rpsButton)
     })
 
-    // Add a click listener to the end game button that runs the endGame() function on click
     let endGameButton = document.getElementById('endGameButton')
     endGameButton.onclick = () => endGame()
 }
 
-// ** endGame function clears all the text on the DOM **
 function endGame() {
     let playerScore = document.getElementById('player-score')
     let hands = document.getElementById('hands')
