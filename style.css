@@ -322,4 +322,25 @@ body {
     grid-row: span 1;
     padding: 10px;
     box-sizing: border-box;
+    
+}
+
+@media (max-width: 920px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    #Main_page {
+        grid-template-columns: 1fr;
+    }
+    #side_bar {
+        display: none;
+    }
 }
