@@ -21,7 +21,7 @@
         <h1 class="neon-text">Play Mingle</h1>
         <ul>
           <a class="neon-text" href="playmingle.html">Home</a>
-          <a class="neon-text" href="tic-tac-toe.html">Games</a>
+          <a class="neon-text active" href="tic-tac-toe.html">Games</a>
           <select id="games-dropdown">
             <option value="game">Games</option>
             <option value="tic-tac-toe">TicTacToe</option>
@@ -38,7 +38,7 @@
     </header>
 
     <main>
-      <section id="NGside_bar">
+      <section id="side_bar">
         <h3>Recommended</h3>
         <ul>
           <li>Friends</li>
@@ -63,7 +63,12 @@
 
       <section id="template">
         <section id="top">
-          <button id="back">Back</button>
+          <button id="back">
+            <span class="button_icon"
+              ><ion-icon name="arrow-back-outline"></ion-icon
+            ></span>
+            <span class="button_text">Back</span>
+          </button>
           <h2>Number Guesser</h2>
           <p id="ng_score">Score: 0</p>
         </section>
@@ -77,13 +82,21 @@
             min="0"
             max="100"
           />
-          <button id="select">Select</button>
-          <p>Number of attempts left: 5</p>
+          <button id="select">
+            <ion-icon name="game-controller-outline"></ion-icon>
+          </button>
         </section>
 
+        <img src="https://i.gifer.com/2eRd.gif" alt="unable to load" />
+
         <section id="bottom">
-          <p id="winLoose">Sorry You Loose!!!</p>
-          <button id="replay">Replay</button>
+          <p id="winLoose">test your gussing ability</p>
+          <button id="replay">
+            <span class="button_text">Replay</span>
+            <span class="button_icon"
+              ><ion-icon name="repeat-outline"></ion-icon
+            ></span>
+          </button>
         </section>
       </section>
 
@@ -141,5 +154,21 @@
       </section>
     </footer>
     <script src="numberGuesser.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
   </body>
 </html>
