@@ -240,7 +240,7 @@ main {
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background: url(./images/back.png);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 1s linear infinite;
 }
