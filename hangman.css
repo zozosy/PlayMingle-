@@ -228,7 +228,7 @@ main {
 
 #back {
     text-align: left;
-    margin: 1px 820px 1px 50px;
+    margin: 10px 120px 1px 50px;
     height: 30px;
     font-size: 16px;
     background-color: #FFF;
@@ -238,7 +238,7 @@ main {
 .heading h1 {
     text-align: center;
     font-size: 48px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 120px 120px 20px;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background: url(./images/back.png);
@@ -280,13 +280,13 @@ main {
     font-size: medium;
 }
 
-.heading{
-    font-size:large;
+.heading {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
     text-align: center;
     font-family: sans-serif;
     color: #ffffff;
-    text-decoration:underline;
-    margin:5px;
-    
+    text-decoration: underline;
+    margin: 5px;
 }
-
