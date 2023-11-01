@@ -119,16 +119,43 @@ const buttonParentClickFunction = function(e) {
 
     if (totalChances == 10) {
         alert("You Lost the Game");
-        location.reload();
+        resetGame();
     }
 
     if (checkStatusGlobal == beverage.length) {
         score++;
         scoreText.textContent = `Score: ${score}`;
         alert("You won the Game");
-        location.reload();
+        resetGame();
     }
+
 };
+
+//  FUNCTION TO RESET THE GAME WHEN PLAYER CLICKS "PLAY AGAIN" BUTTON..
+function resetGame() {
+    const blanksParent = document.querySelector(".blanks_parent");
+    blanksParent.innerHTML = "";
+
+    // Reset HG stand
+    for (let index = 0; index < hangStandChildren.length; index++) {
+        const element = hangStandChildren[index];
+        element.classList.add("display-none");
+    }
+
+    //Re-enable the red nd green btn
+    const alphabetButtons = document.querySelectorAll(".buttons-parent button");
+    alphabetButtons.forEach((button) => {
+        button.removeAttribute("disabled");
+        button.classList.remove("greenBtn", "redBtn");
+    })
+
+    //Re-enable to choose again
+    chooseRandomAnimalName();
+
+    // Reset chances nd checkStatusGlobal
+    totalChances = 0;
+    checkStatusGlobal = 0;
+}
 
 buttonsParentEl.addEventListener("click", buttonParentClickFunction);
 

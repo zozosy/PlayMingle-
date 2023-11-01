@@ -19,7 +19,7 @@
       <nav>
         <h1 class="neon-text">Play Mingle</h1>
         <ul>
-          <a class="neon-text" href="playmingle.html">Home</a>
+          <a class="neon-text active" href="playmingle.html">Home</a>
           <a class="neon-text" href="tic-tac-toe.html">Games</a>
           <select id="games-dropdown">
             <option value="game">Games</option>
@@ -157,6 +157,14 @@
           window.location.href = selectedOption + ".html";
         }
       });
+    </script>
+     <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
     </script>
   </body>
 </html>

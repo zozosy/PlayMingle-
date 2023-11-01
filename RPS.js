@@ -19,7 +19,6 @@ select.addEventListener("change", function() {
     }
 });
 
-// ** get the scores for current round **
 function getResult(playerChoice, computerChoice) {
 
     let score;
