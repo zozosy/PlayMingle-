@@ -20,7 +20,9 @@
 
 button {
     background-color: #fff200;
-    border: none;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 4px 5px rgb(255, 255, 255);
+    border: 5;
     font-size: 2rem;
     font-weight: 600;
     border-radius: 2px;
@@ -226,7 +228,7 @@ main {
 
 #back {
     text-align: left;
-    margin: 20px 50px 0px 50px;
+    margin: 10px 120px 1px 50px;
     height: 30px;
     font-size: 16px;
     background-color: #FFF;
@@ -236,11 +238,11 @@ main {
 .heading h1 {
     text-align: center;
     font-size: 48px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 120px 120px 20px;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background: url(./images/back.png);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 1s linear infinite;
 }
@@ -281,9 +283,10 @@ main {
 .heading {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    font-size: large;
     text-align: center;
     font-family: sans-serif;
+    color: #ffffff;
     text-decoration: underline;
-    margin: 10px;
+    margin: 5px;
 }
