@@ -17,20 +17,12 @@ select.addEventListener("change", function() {
     }
 });
 
-// ** getResult compares playerChoice & computerChoice and returns the score accordingly **
-// human wins - getResult('Rock', 'Scissors') 👉 1
-// human loses - getResult('Scissors', 'Rock') 👉 -1
-// human draws - getResult('Rock', 'Rock') 👉 0
 function getResult(playerChoice, computerChoice) {
     // return the result of score based on if you won, drew, or lost
 
     let score;
-
-    // All situations where human draws, set `score` to 0
     if (playerChoice === computerChoice) {
         score = 0
-
-
     } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
         score = 1
 
@@ -39,21 +31,14 @@ function getResult(playerChoice, computerChoice) {
 
     } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
         score = 1
-
-        // Otherwise human loses (aka set score to -1)
     } else {
         score = -1
     }
-
-    // return score
     return score
 }
 
 // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
 function showResult(score, playerChoice, computerChoice) {
-    // Hint: on a score of -1
-    // You should do result.innerText = 'You Lose!'
-    // Don't forget to grab the div with the 'result' id!
 
     let result = document.getElementById('result')
     switch (score) {
