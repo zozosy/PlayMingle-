@@ -9,7 +9,7 @@ body {
 .neon-text {
     text-align: right;
     color: rgb(221, 255, 0);
-    text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
+    text-shadow: 0 2 5px rgb(229, 255, 0), 0 0 15px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
 }
 
 header {
@@ -263,9 +263,9 @@ footer img {
 }
 
 a:hover {
-    color: #ff3366;
-    text-shadow: 0 0 10px #ff3366;
-    transition: color 0.3s;
+    color: #fe1515;
+    text-shadow: 0 0 10px #c40000;
+    transition: color 0.2s;
 }
 
 body {
