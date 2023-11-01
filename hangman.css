@@ -240,7 +240,7 @@ main {
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background: url(./images/back.png);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 1s linear infinite;
 }
@@ -278,12 +278,12 @@ main {
     font-size: medium;
 }
 
-.heading {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.heading{
+    font-size:large;
     text-align: center;
     font-family: sans-serif;
-    text-decoration: underline;
-    margin: 10px;
+    color: #ffffff;
+    text-decoration:underline;
+    margin:0px;
 }
+
