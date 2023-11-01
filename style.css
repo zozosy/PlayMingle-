@@ -87,7 +87,6 @@ main h3 {
     font-size: medium;
 }
 
-
 main ul {
     font-family: monospace;
     font-size: large;
@@ -248,10 +247,6 @@ footer {
     margin: 11%;
 }
 
-
-
-
-
 footer img {
     width: 50px;
     height: 50px;
@@ -322,4 +317,34 @@ body {
     grid-row: span 1;
     padding: 10px;
     box-sizing: border-box;
+}
+
+#contacting_about {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #eb1708;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fefff5;
+}
+
+@media (max-width: 920px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    #Main_page {
+        grid-template-columns: 1fr;
+    }
+    #side_bar {
+        display: none;
+    }
 }
