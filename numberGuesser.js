@@ -44,7 +44,7 @@ function updateGameState() {
 
 // Event listeren for "Back" button
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 // Event listener for the "Select" button

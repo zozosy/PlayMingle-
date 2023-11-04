@@ -161,7 +161,7 @@ buttonsParentEl.addEventListener("click", buttonParentClickFunction);
 
 // Event listeren for "Back" button
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 //Function for navbar games dropdown

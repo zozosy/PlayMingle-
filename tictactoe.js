@@ -1,5 +1,3 @@
-console.log("Welcome to Tic Tac Toe");
-
 let audioTurn = new Audio("Audio/ting.mp3");
 let gameover = new Audio("Audio/gameover.mp3");
 let turn = "X";
@@ -11,7 +9,7 @@ const scoreTextO = document.getElementById('oScore');
 
 const backButton = document.getElementById('back');
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 // Function to change the turn

@@ -18,8 +18,8 @@
       </section>
       <nav>
         <h1 class="neon-text">Play Mingle</h1>
-        <ul>
-          <a class="neon-text active" href="playmingle.html">Home</a>
+        <ul id="navList">
+          <a class="neon-text active" href="index.html">Home</a>
           <a class="neon-text" href="tic-tac-toe.html">Games</a>
           <select id="games-dropdown">
             <option value="game">Games</option>
@@ -152,14 +152,14 @@
     <script>
       var select = document.getElementById("games-dropdown");
       select.addEventListener("change", function () {
-        var selectedOption = select.options[select.selectedIndex].value;
+        var selectedOption = select.options[select.selectedIndex].value; //select.options[0]
         if (selectedOption) {
           window.location.href = selectedOption + ".html";
         }
       });
     </script>
-     <script>
-      const list = document.querySelectorAll(".list");
+    <script>
+      const list = document.getElementById("navList");
       function activeLink() {
         list.forEach((item) => item.classList.remove("active"));
         this.classList.add("active");
