@@ -6,7 +6,7 @@ function getComputerChoice() {
 
 const backButton = document.getElementById('back');
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 var select = document.getElementById("games-dropdown");

@@ -9,7 +9,7 @@ Docs for Play Mingle
 
 web-based-games-website/
 │
-├── playmingle.html
+├── index.html
 ├── tic-tac-toe.html
 ├── hangman.html
 ├── RPS.html
@@ -42,7 +42,7 @@ web-based-games-website/
 The website is structured with HTML, styled with CSS, and includes some interactivity using JavaScript.
 
 HTML Structure <a name="html-structure"></a>
-playmingle.html: The landing/home page with a header, navbar, side-bar, main page, and footer.
+index.html: The landing/home page with a header, navbar, side-bar, main page, and footer.
 tic-tac-toe.html, hangman.html, RPS.html, numberGuesser.html: Pages for different games with similar structures as the home page but each game has its own unique HTML page.
 contact.html: The contact page with information about the team, a contact form, and the same header, sidebar, and footer sections.
 

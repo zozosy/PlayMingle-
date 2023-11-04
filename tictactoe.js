@@ -11,7 +11,7 @@ const scoreTextO = document.getElementById('oScore');
 
 const backButton = document.getElementById('back');
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 // Function to change the turn
