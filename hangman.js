@@ -606,6 +606,7 @@ const buttonParentClickFunction = function(e) {
         scoreText.textContent = `Score: ${score}`;
         alert("You won the Game");
         resetGame();
+<<<<<<< HEAD
     }
 };
 
@@ -628,6 +629,8 @@ function showHint() {
     } else {
         hintText.textContent = "Sorry! No hint available for this animal. Guessss~~😁";
      
+=======
+>>>>>>> 87453f17cbf03a79da72c8f5ce5cec1984af40fe
     }
 
     // hintText.textContent = `${hint}`;
@@ -646,21 +649,23 @@ function resetGame() {
     const blanksParent = document.querySelector(".blanks_parent");
     blanksParent.innerHTML = "";
 
-      // Reset HG stand
-      for (let index = 0; index < hangStandChildren.length; index++) {
-      const element = hangStandChildren[index];
-      element.classList.add("display-none");
-      }
+    // Reset HG stand
+    for (let index = 0; index < hangStandChildren.length; index++) {
+        const element = hangStandChildren[index];
+        element.classList.add("display-none");
+    }
 
+    //Re-enable the red nd green btn
+    const alphabetButtons = document.querySelectorAll(".buttons-parent button");
+    alphabetButtons.forEach((button) => {
+        button.removeAttribute("disabled");
+        button.classList.remove("greenBtn", "redBtn");
+    })
 
-      //Re-enable the red nd green btn
-      const alphabetButtons = document.querySelectorAll(".buttons-parent button");
-      alphabetButtons.forEach((button) => {
-      button.removeAttribute("disabled");
-      button.classList.remove("greenBtn", "redBtn");
-      })
-    
+    //Re-enable to choose again
+    chooseRandomAnimalName();
 
+<<<<<<< HEAD
       //Re-enable to choose again
       chooseRandomAnimalName();
       
@@ -679,6 +684,13 @@ playAgainButton.addEventListener("click", resetGame);
 
 
 
+=======
+    // Reset chances nd checkStatusGlobal
+    totalChances = 0;
+    checkStatusGlobal = 0;
+}
+
+>>>>>>> 87453f17cbf03a79da72c8f5ce5cec1984af40fe
 buttonsParentEl.addEventListener("click", buttonParentClickFunction);
 // Event listeren for "Back" button
 backButton.addEventListener('click', () => {

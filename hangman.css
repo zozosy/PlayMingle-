@@ -222,7 +222,11 @@ main {
 
 #back {
     text-align: left;
+<<<<<<< HEAD
     margin: 20px 300px 1px -40px;
+=======
+    margin: 10px 120px 1px 50px;
+>>>>>>> 87453f17cbf03a79da72c8f5ce5cec1984af40fe
     height: 30px;
     font-size: 16px;
     background-color: #FFF;
@@ -310,7 +314,11 @@ main {
 .heading h1 {
     text-align: center;
     font-size: 48px;
+<<<<<<< HEAD
     margin: 20px 100px 0px 20px; 
+=======
+    margin: 0px 120px 120px 20px;
+>>>>>>> 87453f17cbf03a79da72c8f5ce5cec1984af40fe
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background: url(./images/back.png);
@@ -366,7 +374,20 @@ main {
     font-size: medium;
 }
 
+<<<<<<< HEAD
 
 
 
  
+=======
+.heading {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 5px;
+}
+>>>>>>> 87453f17cbf03a79da72c8f5ce5cec1984af40fe
