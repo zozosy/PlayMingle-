@@ -1,5 +1,5 @@
 const randomAnimalsNames = [
-    
+
     "Aardvark",
     "Albatross",
     "Alligator",
@@ -228,86 +228,85 @@ const randomAnimalsNames = [
 
 const animalHints = {
 
-   "ardvark": "African burrowing mammal with a long tongue.",
+    "ardvark": "African burrowing mammal with a long tongue.",
 
-   "albatross": "Large seabird known for its impressive wingspan.",
+    "albatross": "Large seabird known for its impressive wingspan.",
 
-   "alligator": "Found in freshwater habitats, it has a broad snout, powerful jaws, and lives in the southeastern United States.",
-    
-   "alpaca": "A domesticated relative of the llama, it's prized for its soft fleece used in making warm clothing.",
+    "alligator": "Found in freshwater habitats, it has a broad snout, powerful jaws, and lives in the southeastern United States.",
 
-   "ant":
-   "These tiny insects are known for their   complex underground colonies and teamwork.",
+    "alpaca": "A domesticated relative of the llama, it's prized for its soft fleece used in making warm clothing.",
 
-   "anteater": "With a long, tube-like snout, it feasts on ants and termites, making it a master of insect hunting.",
+    "ant": "These tiny insects are known for their   complex underground colonies and teamwork.",
 
-   "antelope": "This animal is known for its grace and speed, with many different species found in Africa.",
-    
-   "ape": "These primates are our closest relatives and include species like chimpanzees and gorillas.",
+    "anteater": "With a long, tube-like snout, it feasts on ants and termites, making it a master of insect hunting.",
 
-   "armadillo": "It's a small mammal with a bony armored shell and is often found in the Americas.",
-    
+    "antelope": "This animal is known for its grace and speed, with many different species found in Africa.",
 
-   "baboon": "These primates are large and powerful, known for their distinctive dog-like faces.",
+    "ape": "These primates are our closest relatives and include species like chimpanzees and gorillas.",
 
-   "badger": "This animal is known for its strong digging abilities and distinctive black and white facial markings.",
+    "armadillo": "It's a small mammal with a bony armored shell and is often found in the Americas.",
 
-   "barracuda": "A fearsome predator of the sea, it's known for its sharp teeth and swift swimming.",
 
-   "bat": "The only mammals capable of sustained flight, they play a vital role in pollination and insect control.",
+    "baboon": "These primates are large and powerful, known for their distinctive dog-like faces.",
 
-   "bear": "These large mammals come in various species, including polar bears and grizzly bears.",
+    "badger": "This animal is known for its strong digging abilities and distinctive black and white facial markings.",
 
-   "beaver": "Known for building dams and lodges, they are expert engineers of the animal kingdom.",
+    "barracuda": "A fearsome predator of the sea, it's known for its sharp teeth and swift swimming.",
 
-   "bee": "These industrious insects are vital for pollinating plants and producing honey.",
+    "bat": "The only mammals capable of sustained flight, they play a vital role in pollination and insect control.",
 
-   "bison": " Often called buffalo, these massive mammals once roamed the American prairies in vast herds.",
-   "boar": "Wild relatives of domestic pigs, they are known for their tusks and can be quite aggressive.",
+    "bear": "These large mammals come in various species, including polar bears and grizzly bears.",
 
-   "buffalo": " A large and powerful herbivore, it's often seen in herds on the African savannah.",
+    "beaver": "Known for building dams and lodges, they are expert engineers of the animal kingdom.",
 
-   "butterfly": "These colorful insects undergo a remarkable transformation from caterpillar to their final, delicate form.",
+    "bee": "These industrious insects are vital for pollinating plants and producing honey.",
 
-   "camel": "Adapted for desert life, they are known for their humps and their ability to endure long journeys  without water.",
+    "bison": " Often called buffalo, these massive mammals once roamed the American prairies in vast herds.",
+    "boar": "Wild relatives of domestic pigs, they are known for their tusks and can be quite aggressive.",
 
-   "capybara": "The world's largest rodent, it's often seen in groups near water and is quite sociable.",
+    "buffalo": " A large and powerful herbivore, it's often seen in herds on the African savannah.",
 
-   "caribou": "Also known as reindeer, they are known for their long migrations and are an important part of Arctic ecosystems.",
+    "butterfly": "These colorful insects undergo a remarkable transformation from caterpillar to their final, delicate form.",
 
-   "cassowary": "A flightless bird with striking blue skin and a helmet-like casque on its head.",
+    "camel": "Adapted for desert life, they are known for their humps and their ability to endure long journeys  without water.",
 
-   "cat": "A popular household pet known for its agility and independent nature.",
+    "capybara": "The world's largest rodent, it's often seen in groups near water and is quite sociable.",
 
-   "caterpillar": "The larval stage of a butterfly, they often have colorful patterns and transform into butterflies.",
+    "caribou": "Also known as reindeer, they are known for their long migrations and are an important part of Arctic ecosystems.",
 
-   "cattle": " Domesticated bovines raised for milk, meat, and various agricultural purposes.",
+    "cassowary": "A flightless bird with striking blue skin and a helmet-like casque on its head.",
 
-   "chamois": " These agile mountain goats are known for their ability to navigate steep and rocky terrain.",
+    "cat": "A popular household pet known for its agility and independent nature.",
 
-   "cheetah": "The fastest land animal, known for its incredible speed and distinctive black (tear tracks) on its face.",
+    "caterpillar": "The larval stage of a butterfly, they often have colorful patterns and transform into butterflies.",
 
-   "chicken": "A common farm bird, known for laying eggs and providing meat.",
+    "cattle": " Domesticated bovines raised for milk, meat, and various agricultural purposes.",
 
-   "chimpanzee": " Our closest relatives in the animal kingdom, known for their intelligence and social behavior.",
+    "chamois": " These agile mountain goats are known for their ability to navigate steep and rocky terrain.",
 
-   "chinchilla": "A small, adorable rodent often kept as a pet and known for its soft fur.",
+    "cheetah": "The fastest land animal, known for its incredible speed and distinctive black (tear tracks) on its face.",
 
-   "chough": "A type of crow with distinctive red legs and beak, often seen in coastal areas.",
+    "chicken": "A common farm bird, known for laying eggs and providing meat.",
 
-   "clam": "These bivalve mollusks live in shells and are often enjoyed as seafood.",
+    "chimpanzee": " Our closest relatives in the animal kingdom, known for their intelligence and social behavior.",
 
-   "cobra": "A venomous snake known for its hood and deadly bite.",
+    "chinchilla": "A small, adorable rodent often kept as a pet and known for its soft fur.",
 
-   "cockroach": "These resilient insects can survive in various environments and are often associated with household pests.",
+    "chough": "A type of crow with distinctive red legs and beak, often seen in coastal areas.",
 
-   "cod": "A popular fish in seafood cuisine, known for its flaky white flesh.",
+    "clam": "These bivalve mollusks live in shells and are often enjoyed as seafood.",
 
-   "cormorant": "Water birds known for their diving abilities and excellent fishing skills.",
-   
-   "coyote": "A clever and adaptable canid found in North and Central America.",
+    "cobra": "A venomous snake known for its hood and deadly bite.",
 
-   "crab": " This animal is a crustacean with a hard exoskeleton, pincers, and is often found along coastlines.",
+    "cockroach": "These resilient insects can survive in various environments and are often associated with household pests.",
+
+    "cod": "A popular fish in seafood cuisine, known for its flaky white flesh.",
+
+    "cormorant": "Water birds known for their diving abilities and excellent fishing skills.",
+
+    "coyote": "A clever and adaptable canid found in North and Central America.",
+
+    "crab": " This animal is a crustacean with a hard exoskeleton, pincers, and is often found along coastlines.",
     "crane": " It's a tall wading bird known for its long legs and graceful appearance, often seen in wetlands.",
     "crocodile": " A large reptile with a powerful jaw, it's often found in tropical regions and near water.",
     "crow": "A common black bird known for its intelligence and cawing calls, often seen in urban areas.",
@@ -442,56 +441,56 @@ const animalHints = {
     "reindeer": "Also known as caribou, these Arctic deer are known for their annual migrations and antlers.",
     "rhinoceros": "Large herbivores with thick skin and one or two horns on their noses.",
     "rook": "A black-plumaged member of the crow family known for its distinctive beak.",
-  "salamander": "This amphibian has a long tail, moist skin, and can be found near water.",
-  "salmon": "A fish known for its distinctive journey from freshwater to the ocean and back.",
-  "sand Dollar": "A flat and round sea urchin with a beautiful pattern on its shell.",
-  "sandpiper": "A shorebird often seen along coastlines, known for its quick, darting movements.",
-//   "sardine": "Hint: A small, oily fish often packed in cans and used in various dishes.",
-//   "scorpion": "Hint: An arachnid with a venomous sting and a segmented tail.",
-//   "seahorse": "Hint: A unique fish with a horse-like head and a tendency to swim upright.",
-//   "seal": "Hint: Semi-aquatic mammals known for their playful behavior and blubber for insulation.",
-//   "shark": "Hint: Apex predators of the ocean, with sharp teeth and a keen sense of smell.",
-//   "sheep": "Hint: Domesticated for their wool and meat, often seen grazing in pastures.",
-//   "shrew": "Hint: Tiny mammals with a high metabolism and an elongated, pointed snout.",
-//   "skunk": "Hint: Easily recognizable by their black and white coloration and the ability to emit a foul odor when   treatened.",
-//   "snail": "Hint: A slow-moving gastropod known for its coiled shell and slimy trail.",
-//   "snake": "Hint: Legless reptiles with a wide range of species, some of which are venomous.",
-//   "sparrow": "Hint: Small birds known for their cheerful chirping and adaptability to urban environments.",
-//   "spider": "Hint: Arachnids with eight legs, spinning webs to catch prey and often portrayed in folklore.",
-//   "spoonbill": "Hint: Wading birds with distinctive spoon-shaped bills, often seen in wetlands.",
-//   "squid": "Hint: Cephalopods with a soft body, tentacles, and a beak-like mouth.",
-//   "squirrel": "Hint: Small, agile mammals often seen in trees and known for gathering and storing nuts.",
-//   "starling": "Hint: Songbirds with iridescent feathers and the ability to mimic other bird calls.",
-//   "stingray": "Hint: Cartilaginous fish known for their flat bodies and the potential to deliver painful stings.",
-//   "stinkbug": "Hint: Insects known for their strong odor when disturbed or crushed.",
-//   "stork": "Hint: Large wading birds often associated with delivering babies in folklore.",
-//   "swallow": "Hint: Agile birds known for their acrobatic flight and distinctive forked tails.",
-//   "swan": "Hint: Graceful waterfowl known for their elegant necks and white plumage.",
-//   "tapir": "Hint: Large, herbivorous mammals with distinctive trunk-like snouts.",
-//   "tarsier": "Hint: Small primates with enormous eyes and the ability to rotate their heads almost 180 degrees.",
-//   "termite": "Hint: Social insects known for their wood-eating habits and the construction of intricate mounds.",
-//   "tiger": "Hint: Majestic big cats with distinctive orange fur and black stripes.",
-//   "toad": "Hint: Amphibians often found in damp environments, with warty skin and a preference for hopping.",
-//   "trout": "Hint: Freshwater fish known for their delicious taste and popularity in angling.",
-//   "turkey": "Hint: Large birds known for their gobbling calls and association with Thanksgiving feasts.",
-//   "turtle": "Hint: Reptiles with protective shells that come in various species and sizes.",
-//   "viper": "Hint: Venomous snakes often characterized by their triangular-shaped heads and vertical pupils.",
-//   "vulture": "Hint: Birds of prey that feed on carrion, with a keen sense of smell for locating food.",
-//   "wallaby": "Hint: Marsupials resembling small kangaroos, often found in Australia.",
-//   "walrus": "Hint: Marine mammals known for their tusks and ability to haul out on ice and rocks.",
-//   "wasp": "Hint: Social insects with a painful sting and a role in pollination and pest control.",
-//   "weasel": "Hint: Small carnivorous mammals known for their agility and ability to hunt small prey.",
-//   "whale": "Hint: Enormous marine mammals with species like humpbacks and orcas, known for their aquatic lifestyles.",
-//   "wildcat": "Hint: Small to medium-sized feline predators, often found in various habitats.",
-  "wolf": " Apex predators with a strong pack mentality and a vital role in ecosystems.",
-  "wolverine": "Robust and fearless mammals known for their tenacity and strength.",
-  "wombat": " Short-legged marsupials with a love for digging burrows and nocturnal habits.",
-  "woodcock": " A plump bird known for its distinctive courtship display flights.",
-  "woodpecker": " Birds with specialized beaks for drumming on trees and finding insects under bark.",
-  "worm": " Legless invertebrates found in the soil, often beneficial for composting and soil health.",
-  "wren": " Small, lively birds with melodious songs, often nesting in shrubs and gardens.",
-  "yak": "Large, shaggy-haired mammals adapted to high-altitude regions, often used for milk, meat, and transportation.",
-  "zebra": "Striped equids known for their distinctive black-and-white coat patterns."
+    "salamander": "This amphibian has a long tail, moist skin, and can be found near water.",
+    "salmon": "A fish known for its distinctive journey from freshwater to the ocean and back.",
+    "sand Dollar": "A flat and round sea urchin with a beautiful pattern on its shell.",
+    "sandpiper": "A shorebird often seen along coastlines, known for its quick, darting movements.",
+    //   "sardine": "Hint: A small, oily fish often packed in cans and used in various dishes.",
+    //   "scorpion": "Hint: An arachnid with a venomous sting and a segmented tail.",
+    //   "seahorse": "Hint: A unique fish with a horse-like head and a tendency to swim upright.",
+    //   "seal": "Hint: Semi-aquatic mammals known for their playful behavior and blubber for insulation.",
+    //   "shark": "Hint: Apex predators of the ocean, with sharp teeth and a keen sense of smell.",
+    //   "sheep": "Hint: Domesticated for their wool and meat, often seen grazing in pastures.",
+    //   "shrew": "Hint: Tiny mammals with a high metabolism and an elongated, pointed snout.",
+    //   "skunk": "Hint: Easily recognizable by their black and white coloration and the ability to emit a foul odor when   treatened.",
+    //   "snail": "Hint: A slow-moving gastropod known for its coiled shell and slimy trail.",
+    //   "snake": "Hint: Legless reptiles with a wide range of species, some of which are venomous.",
+    //   "sparrow": "Hint: Small birds known for their cheerful chirping and adaptability to urban environments.",
+    //   "spider": "Hint: Arachnids with eight legs, spinning webs to catch prey and often portrayed in folklore.",
+    //   "spoonbill": "Hint: Wading birds with distinctive spoon-shaped bills, often seen in wetlands.",
+    //   "squid": "Hint: Cephalopods with a soft body, tentacles, and a beak-like mouth.",
+    //   "squirrel": "Hint: Small, agile mammals often seen in trees and known for gathering and storing nuts.",
+    //   "starling": "Hint: Songbirds with iridescent feathers and the ability to mimic other bird calls.",
+    //   "stingray": "Hint: Cartilaginous fish known for their flat bodies and the potential to deliver painful stings.",
+    //   "stinkbug": "Hint: Insects known for their strong odor when disturbed or crushed.",
+    //   "stork": "Hint: Large wading birds often associated with delivering babies in folklore.",
+    //   "swallow": "Hint: Agile birds known for their acrobatic flight and distinctive forked tails.",
+    //   "swan": "Hint: Graceful waterfowl known for their elegant necks and white plumage.",
+    //   "tapir": "Hint: Large, herbivorous mammals with distinctive trunk-like snouts.",
+    //   "tarsier": "Hint: Small primates with enormous eyes and the ability to rotate their heads almost 180 degrees.",
+    //   "termite": "Hint: Social insects known for their wood-eating habits and the construction of intricate mounds.",
+    //   "tiger": "Hint: Majestic big cats with distinctive orange fur and black stripes.",
+    //   "toad": "Hint: Amphibians often found in damp environments, with warty skin and a preference for hopping.",
+    //   "trout": "Hint: Freshwater fish known for their delicious taste and popularity in angling.",
+    //   "turkey": "Hint: Large birds known for their gobbling calls and association with Thanksgiving feasts.",
+    //   "turtle": "Hint: Reptiles with protective shells that come in various species and sizes.",
+    //   "viper": "Hint: Venomous snakes often characterized by their triangular-shaped heads and vertical pupils.",
+    //   "vulture": "Hint: Birds of prey that feed on carrion, with a keen sense of smell for locating food.",
+    //   "wallaby": "Hint: Marsupials resembling small kangaroos, often found in Australia.",
+    //   "walrus": "Hint: Marine mammals known for their tusks and ability to haul out on ice and rocks.",
+    //   "wasp": "Hint: Social insects with a painful sting and a role in pollination and pest control.",
+    //   "weasel": "Hint: Small carnivorous mammals known for their agility and ability to hunt small prey.",
+    //   "whale": "Hint: Enormous marine mammals with species like humpbacks and orcas, known for their aquatic lifestyles.",
+    //   "wildcat": "Hint: Small to medium-sized feline predators, often found in various habitats.",
+    "wolf": " Apex predators with a strong pack mentality and a vital role in ecosystems.",
+    "wolverine": "Robust and fearless mammals known for their tenacity and strength.",
+    "wombat": " Short-legged marsupials with a love for digging burrows and nocturnal habits.",
+    "woodcock": " A plump bird known for its distinctive courtship display flights.",
+    "woodpecker": " Birds with specialized beaks for drumming on trees and finding insects under bark.",
+    "worm": " Legless invertebrates found in the soil, often beneficial for composting and soil health.",
+    "wren": " Small, lively birds with melodious songs, often nesting in shrubs and gardens.",
+    "yak": "Large, shaggy-haired mammals adapted to high-altitude regions, often used for milk, meat, and transportation.",
+    "zebra": "Striped equids known for their distinctive black-and-white coat patterns."
 
 };
 
@@ -620,20 +619,20 @@ const hintText = document.getElementById("hintText");
 function showHint() {
     console.log("Hint button clicked.");
     const currentAnimal = randomAnimalName.toLowerCase(); // Convert the animal name to lowercase
-    const hint = animalHints[currentAnimal]; 
+    const hint = animalHints[currentAnimal];
     // to get  hint from  animalHints obj mentioned above: 
-    
+
     if (hint) {
         hintText.textContent = `${hint}`;
-        
+
     } else {
         hintText.textContent = "Sorry! No hint available for this animal. Guessss~~😁";
-     
+
 
     }
 
     // hintText.textContent = `${hint}`;
-    
+
     hintText.classList.remove("hidden");
 
 
@@ -664,13 +663,13 @@ function resetGame() {
     //Re-enable to choose again
     chooseRandomAnimalName();
 
-      //Re-enable to choose again
-      chooseRandomAnimalName();
-      
-      // Reset chances nd checkStatusGlobal
-      totalChances = 0;
-      checkStatusGlobal = 0;
-    
+    //Re-enable to choose again
+    chooseRandomAnimalName();
+
+    // Reset chances nd checkStatusGlobal
+    totalChances = 0;
+    checkStatusGlobal = 0;
+
 }
 
 // => to "playAgain" btn
@@ -685,7 +684,7 @@ playAgainButton.addEventListener("click", resetGame);
 buttonsParentEl.addEventListener("click", buttonParentClickFunction);
 // Event listeren for "Back" button
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 
@@ -699,14 +698,6 @@ select.addEventListener("change", function() {
     var selectedOption = select.options[select.selectedIndex].value;
     if (selectedOption) {
         window.location.href = selectedOption + ".html";
-    } 
+    }
 
 });
-
-
-
-
-
-
-
-
