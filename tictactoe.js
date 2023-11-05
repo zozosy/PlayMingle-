@@ -6,9 +6,13 @@ let turn = "X";
 let isgameover = false;
 let scoreX = 0;
 let scoreO = 0;
-const backButton = document.getElementById('back');
 const scoreTextX = document.getElementById('xScore');
 const scoreTextO = document.getElementById('oScore');
+
+const backButton = document.getElementById('back');
+backButton.addEventListener('click', () => {
+    window.location.href = 'index.html';
+});
 
 // Function to change the turn
 const changeTurn = () => {

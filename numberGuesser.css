@@ -107,3 +107,7 @@ button {
 button:hover {
     background-color: #777777;
 }
+
+#game p {
+    display: none; 
+}

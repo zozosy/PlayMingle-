@@ -6,13 +6,20 @@ const resultText = document.querySelector('#bottom p');
 const replayButton = document.getElementById('replay');
 const scoreText = document.querySelector('#top p');
 
-const targetNumber = Math.floor(Math.random() * 101);
+let targetNumber = Math.floor(Math.random() * 101); //jst changed CONST to LET to declare it as variable,  uh initially declared targetNumber as a const. However, because uh  want to re-assign a new random value to it after clicking the "Replay" button, uh should change it to LET to allow re-assignment. nvm:|!..
 
 let attemptsLeft = 5;
 let score = 0;
 
 // Function to update the game state
 function updateGameState() {
+
+    // Check if numericInput is found
+    if (!numericInput) {
+        console.error("Element with ID 'numericInput' not found.");
+        return; // Exit the function to avoid further errors
+    }
+
     const guess = parseInt(numericInput.value);
 
     if (isNaN(guess)) {
@@ -42,25 +49,35 @@ function updateGameState() {
     numericInput.value = '';
 }
 
+
 // Event listeren for "Back" button
 backButton.addEventListener('click', () => {
-    window.location.href = 'playmingle.html';
+    window.location.href = 'index.html';
 });
 
 // Event listener for the "Select" button
 selectButton.addEventListener('click', updateGameState);
+
+
 
 // Event listener for the "Replay" button
 replayButton.addEventListener('click', () => {
     // Reset the game state
     attemptsLeft = 5;
     //   score = 0;
-    replayButton.style.display = 'none';
+
+
+    // replayButton.style.display = 'none'; //DISPLAY: 'BLOCK' mks an element visible, while DISPLAY: 'NONE' hides the element completely,so i commented out instead of setting it to block, nvm! 
+
+
     selectButton.disabled = false;
     resultText.textContent = '';
-    //   scoreText.textContent = 'Score: 0';
+    // scoreText.textContent = 'Score: 0';
     attemptsText.textContent = 'Number of attempts left: 5';
     targetNumber = Math.floor(Math.random() * 101);
+
+    numericInput.value= '';//To enable the guessed number to change upon hitting the replay button, I set the numericInput field's value to an empty string witihin a "REPLAY EVENT LISTENER" 
+
 });
 
 var select = document.getElementById("games-dropdown");
@@ -70,3 +87,4 @@ select.addEventListener("change", function() {
         window.location.href = selectedOption + ".html";
     }
 });
+
