@@ -8,6 +8,11 @@
     height: 100%;
     flex-direction: column;
     margin-top: 50px;
+    background: url(./images/background.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .buttons {
@@ -31,6 +36,11 @@ button {
 
 main {
     display: flex;
+    background: url(./images/background.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 #sidebar {
@@ -43,6 +53,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 #top {
