@@ -1,9 +1,11 @@
+// ** get the computers choice **
 function getComputerChoice() {
     let rpsChoices = ['Rock', 'Paper', 'Scissors']
     let computerChoice = rpsChoices[Math.floor(Math.random() * 3)]
     return computerChoice
 }
 
+// ** back button and it's functionality **
 const backButton = document.getElementById('back');
 backButton.addEventListener('click', () => {
     window.location.href = 'index.html';
@@ -18,14 +20,12 @@ select.addEventListener("change", function() {
 });
 
 function getResult(playerChoice, computerChoice) {
-    // return the result of score based on if you won, drew, or lost
 
     let score;
     if (playerChoice === computerChoice) {
         score = 0
     } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
         score = 1
-
     } else if (playerChoice === "Paper" && computerChoice === "Rock") {
         score = 1
 

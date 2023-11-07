@@ -65,6 +65,7 @@ main {
     box-shadow: 3px 3px 12px rgb(255, 255, 0);
     text-shadow: 0 0 10px rgb(229, 255, 0), 0 0 20px rgb(255, 255, 0), 0 0 30px rgb(225, 255, 0);
     background: linear-gradient(to bottom, #ee0000, #000000);
+    position: relative;
 }
 
 .box {
