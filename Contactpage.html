@@ -111,7 +111,14 @@
           enctype="text/plain"
         >
           <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" required /><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            oninput="validateName(this)"
+          /><br />
+          <span id="name-error" class="error-message"></span>
 
           <label for="email">Enter valid Email address:</label><br />
           <input type="email" id="email" name="email" required /><br />
@@ -163,22 +170,6 @@
         </article>
       </section>
     </footer>
-    <script>
-      var select = document.getElementById("games-dropdown");
-      select.addEventListener("change", function () {
-        var selectedOption = select.options[select.selectedIndex].value;
-        if (selectedOption) {
-          window.location.href = selectedOption + ".html";
-        }
-      });
-    </script>
-    <script>
-      const list = document.querySelectorAll(".list");
-      function activeLink() {
-        list.forEach((item) => item.classList.remove("active"));
-        this.classList.add("active");
-      }
-      list.forEach((item) => item.addEventListener("click", activeLink));
-    </script>
+    <script src="contact.js"></script>
   </body>
 </html>
