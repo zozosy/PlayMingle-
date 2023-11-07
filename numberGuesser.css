@@ -5,6 +5,11 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
+    background: url(./images/background.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 
@@ -106,4 +111,8 @@ button {
 
 button:hover {
     background-color: #777777;
+}
+
+#game p {
+    display: none; 
 }

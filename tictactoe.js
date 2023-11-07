@@ -82,7 +82,8 @@ document.getElementById("reset").addEventListener('click', () => {
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px";
 });
 
-var select = document.getElementById("games-dropdown");
+// function to switch between games
+var select = document.getElementById("games-dropdown"); // 
 select.addEventListener("change", function() {
     var selectedOption = select.options[select.selectedIndex].value;
     if (selectedOption) {
