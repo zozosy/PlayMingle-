@@ -42,7 +42,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background: linear-gradient(to bottom, #f2a922, #ff0000b1);
+    background: linear-gradient(to bottom, #fe0000, #000000);
     color: #ffffff;
     transition: color 0.3s;
 }
@@ -193,10 +193,15 @@ main {
     color: #FFF;
     display: flex;
     grid-template-columns: 20% 60% 20%;
+    background: url(./images/background.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 #side_bar {
-    background: rgba(235, 0, 0, 0.8);
+    background: linear-gradient(to bottom, #fe0000, #000000);
     color: #FFF;
     padding:5px;
     margin: 3px;
